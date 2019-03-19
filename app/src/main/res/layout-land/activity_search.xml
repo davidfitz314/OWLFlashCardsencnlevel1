@@ -64,13 +64,15 @@
                 android:id="@+id/imageView2"
                 android:layout_width="174dp"
                 android:layout_height="170dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/searchChineseTextView"
-                app:layout_constraintEnd_toStartOf="@+id/searchEnglishTextView"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/mainscreen_logo_image_description"
                 app:srcCompat="@drawable/owl_background_image_icon" />
 
             <TextView
@@ -78,8 +80,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="8dp"
                 android:contentDescription="@string/search_text_view_results_description"
                 android:text="@string/search_no_results_default_text"
@@ -88,16 +90,18 @@
                 android:textIsSelectable="true"
                 android:textSize="44sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/searchChineseTextView"
-                android:layout_width="wrap_content"
+                android:layout_width="305dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 android:contentDescription="@string/search_text_view_results_description"
                 android:text="@string/search_no_results_default_text"
                 android:textAlignment="center"
@@ -106,15 +110,14 @@
                 android:textSize="54sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/searchChineseEnglishTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_marginTop="16dp"
                 android:contentDescription="@string/search_text_view_results_description"
                 android:text="@string/search_no_results_default_text"
                 android:textAlignment="center"
@@ -123,23 +126,22 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/searchChineseTextView" />
 
             <ImageButton
                 android:id="@+id/search_sound_english_button"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="85dp"
-                android:layout_height="77dp"
+                android:layout_width="96dp"
+                android:layout_height="88dp"
                 android:layout_margin="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:contentDescription="@string/search_screen_play_sound_description"
                 android:onClick="playEnglishSound"
                 android:scaleType="fitXY"
                 android:tint="@color/earthGreen"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/searchEnglishTextView"
                 app:srcCompat="@drawable/ic_play_circle_outline_black_24dp" />
 
@@ -149,13 +151,13 @@
                 android:layout_width="79dp"
                 android:layout_height="73dp"
                 android:layout_margin="8dp"
-                android:layout_marginTop="8dp"
                 android:contentDescription="@string/search_screen_play_sound_description"
                 android:onClick="playChineseSound"
                 android:scaleType="fitXY"
                 android:tint="@color/earthGreen"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/searchChineseEnglishTextView"
                 app:srcCompat="@drawable/ic_play_circle_outline_black_24dp" />
 
