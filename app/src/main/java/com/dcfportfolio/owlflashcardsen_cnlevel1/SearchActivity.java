@@ -12,6 +12,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.AsyncTaskLoader;
 import android.support.v4.content.Loader;
@@ -25,6 +26,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -39,7 +41,7 @@ import java.util.List;
 public class SearchActivity extends AppCompatActivity {
     private EditText mSearchText;
     private boolean mHasSearched = false;
-    private LinearLayout mSearchResultsHolder;
+    private ConstraintLayout mSearchResultsHolder;
     private CardViewModel mViewModel;
     private TextView mEnglishText;
     private TextView mChineseText;
@@ -63,7 +65,7 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        mSearchResultsHolder = findViewById(R.id.searchLinearLayout);
+        mSearchResultsHolder = findViewById(R.id.searchConstraintInnerLayout);
         mSearchText = findViewById(R.id.searchEditTextView);
         mViewModel = ViewModelProviders.of(this).get(CardViewModel.class);
 
@@ -81,8 +83,8 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<Card> cards) {
 
-                Button englishSound = findViewById(R.id.search_sound_english_button);
-                Button chineseSound = findViewById(R.id.search_sound_chinese_button);
+                ImageButton englishSound = findViewById(R.id.search_sound_english_button);
+                ImageButton chineseSound = findViewById(R.id.search_sound_chinese_button);
                 if (cards != null && cards.size() > 0){
                     mAllCards = cards;
                     mEnglishText.setText(mAllCards.get(0).getEnglish());
@@ -100,18 +102,18 @@ public class SearchActivity extends AppCompatActivity {
                             soundChinese = soundPool.load(getApplicationContext(), soundC, 0);
                             englishSound.setEnabled(true);
                             chineseSound.setEnabled(true);
-                            englishSound.setTextColor(getResources().getColor(R.color.enabled_color));
-                            chineseSound.setTextColor(getResources().getColor(R.color.enabled_color));
+                            /*englishSound.setTextColor(getResources().getColor(R.color.enabled_color));
+                            chineseSound.setTextColor(getResources().getColor(R.color.enabled_color));*/
 
-                        } catch (NullPointerException e){
+                        } catch (Exception e){
                             e.printStackTrace();
                         }
 
                     } else {
                         englishSound.setEnabled(false);
                         chineseSound.setEnabled(false);
-                        englishSound.setTextColor(getResources().getColor(R.color.disabled_color));
-                        chineseSound.setTextColor(getResources().getColor(R.color.disabled_color));
+                        /*englishSound.setTextColor(getResources().getColor(R.color.disabled_color));
+                        chineseSound.setTextColor(getResources().getColor(R.color.disabled_color));*/
                     }
                 } else {
                     mEnglishText.setText(getString(R.string.search_no_results_default_text));
@@ -122,8 +124,8 @@ public class SearchActivity extends AppCompatActivity {
                     mChineseEnglishText.setContentDescription(getString(R.string.search_no_results_default_text));
                     englishSound.setEnabled(false);
                     chineseSound.setEnabled(false);
-                    englishSound.setTextColor(getResources().getColor(R.color.disabled_color));
-                    chineseSound.setTextColor(getResources().getColor(R.color.disabled_color));
+                    /*englishSound.setTextColor(getResources().getColor(R.color.disabled_color));
+                    chineseSound.setTextColor(getResources().getColor(R.color.disabled_color));*/
                 }
             }
         };

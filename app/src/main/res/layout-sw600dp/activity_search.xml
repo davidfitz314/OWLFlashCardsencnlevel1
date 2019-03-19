@@ -62,8 +62,8 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="174dp"
-                android:layout_height="170dp"
+                android:layout_width="284dp"
+                android:layout_height="244dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="8dp"
                 android:contentDescription="@string/search_text_view_results_description"
                 android:text="@string/search_no_results_default_text"
@@ -88,6 +88,7 @@
                 android:textIsSelectable="true"
                 android:textSize="44sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/search_sound_english_button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -129,8 +130,8 @@
             <ImageButton
                 android:id="@+id/search_sound_english_button"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="85dp"
-                android:layout_height="77dp"
+                android:layout_width="140dp"
+                android:layout_height="134dp"
                 android:layout_margin="8dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
@@ -146,8 +147,8 @@
             <ImageButton
                 android:id="@+id/search_sound_chinese_button"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="79dp"
-                android:layout_height="73dp"
+                android:layout_width="141dp"
+                android:layout_height="118dp"
                 android:layout_margin="8dp"
                 android:layout_marginTop="8dp"
                 android:contentDescription="@string/search_screen_play_sound_description"
