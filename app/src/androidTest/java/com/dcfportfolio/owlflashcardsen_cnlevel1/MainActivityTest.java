@@ -40,6 +40,7 @@ public class MainActivityTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
+    /*
     @Test
     public void mainActivityNameDialogTest() {
         // Added a sleep statement to match the app's execution delay.
@@ -98,6 +99,7 @@ public class MainActivityTest {
             }
         };
     }
+    */
 
     @Test
     public void OpenNextActivityTest() {
