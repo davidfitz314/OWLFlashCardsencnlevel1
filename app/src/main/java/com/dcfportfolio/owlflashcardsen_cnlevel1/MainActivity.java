@@ -74,9 +74,9 @@ public class MainActivity extends AppCompatActivity {
 
         /*TODO create string resources and content descriptions for all buttons and textviews
             TODO remove stack print traces, log, and debug tags before publishing
-            TODO implement design for search page
-            TODO update database, remobe fallback to destructive migration method and implement better method
-            TODO add in get internet permission request
+            TODO implement better system for sound loading
+            TODO update database, remove fallback to destructive migration method and implement better method
+            TODO create unit tests for each class.
          */
 
 
