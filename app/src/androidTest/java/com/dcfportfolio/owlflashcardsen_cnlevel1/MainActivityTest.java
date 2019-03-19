@@ -40,7 +40,7 @@ public class MainActivityTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
-    /*
+    /* only used on first time app start or when settings pref are reset
     @Test
     public void mainActivityNameDialogTest() {
         // Added a sleep statement to match the app's execution delay.
