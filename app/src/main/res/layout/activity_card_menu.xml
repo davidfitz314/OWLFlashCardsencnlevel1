@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp"
+    tools:context=".CardMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/pronounceGuideButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/earthGreen"
+                android:padding="32dp"
+                android:text="@string/pronunciation_guide_text"
+                android:contentDescription="@string/pronunciation_guide_text"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/cardMenuGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:columnCount="2">
+
+                <Button
+                    android:id="@+id/cat1Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/animals_text"
+                    android:contentDescription="@string/animals_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat2Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/bodyparts_text"
+                    android:contentDescription="@string/bodyparts_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat3Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/foods_text"
+                    android:contentDescription="@string/foods_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat4Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/numbers_text"
+                    android:contentDescription="@string/numbers_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat5Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/objects_text"
+                    android:contentDescription="@string/objects_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat6Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/people_text"
+                    android:contentDescription="@string/people_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat7Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/places_text"
+                    android:contentDescription="@string/places_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat8Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/shapes_u0026_colors_text"
+                    android:contentDescription="@string/shapes_u0026_colors_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+                <Button
+                    android:id="@+id/cat9Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/earthGreen"
+                    android:text="@string/transportation_text"
+                    android:contentDescription="@string/transportation_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_columnWeight="1" />
+
+            </android.support.v7.widget.GridLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PronunciationGuideActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/prounceHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/chinese_prounciation_guide_header"
+            android:text="@string/chinese_prounciation_guide_header"
+            android:textIsSelectable="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/pinyin_tones_of_mandarin_explanation_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/pinyin_tones_of_mandarin_explanation_description"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/pinyin_writing_style_note_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/pinyin_writing_style_note_description"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/first_tone_pinyin_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/first_tone_pinyin_description"
+            android:textIsSelectable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/prounce_activity_default_start_margin"
+                android:layout_marginEnd="@dimen/pronounce_activity_default_end_margin"
+                android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+                android:contentDescription="@string/first_tone_pinion_example_text_description"
+                android:text="@string/first_tone_pinion_example_text_description"
+                android:textIsSelectable="true" />
+
+            <ImageButton
+                android:id="@+id/sound_macron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_background_light"
+                android:contentDescription="@string/play_sample_sound_button_description"
+                app:srcCompat="@drawable/ic_play_circle_outline_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/second_tone_pinyin_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/second_tone_pinyin_description"
+            android:textIsSelectable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/prounce_activity_default_start_margin"
+                android:layout_marginEnd="@dimen/pronounce_activity_default_end_margin"
+                android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+                android:contentDescription="@string/second_tone_pinion_example_text_description"
+                android:text="@string/second_tone_pinion_example_text_description"
+                android:textIsSelectable="true" />
+
+            <ImageButton
+                android:id="@+id/sound_accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_background_light"
+                android:contentDescription="@string/play_sample_sound_button_description"
+                app:srcCompat="@drawable/ic_play_circle_outline_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/third_tone_pinyin_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/third_tone_pinyin_description"
+            android:textIsSelectable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/prounce_activity_default_start_margin"
+                android:layout_marginEnd="@dimen/pronounce_activity_default_end_margin"
+                android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+                android:contentDescription="@string/third_tone_pinion_example_text_description"
+                android:text="@string/third_tone_pinion_example_text_description"
+                android:textIsSelectable="true" />
+
+            <ImageButton
+                android:id="@+id/sound_caron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_background_light"
+                android:contentDescription="@string/play_sample_sound_button_description"
+                app:srcCompat="@drawable/ic_play_circle_outline_black_24dp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/fourth_tone_pinyin_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/fourth_tone_pinyin_description"
+            android:textIsSelectable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/prounce_activity_default_start_margin"
+                android:layout_marginEnd="@dimen/pronounce_activity_default_end_margin"
+                android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+                android:contentDescription="@string/fourth_tone_pinion_example_text_description"
+                android:text="@string/fourth_tone_pinion_example_text_description"
+                android:textIsSelectable="true" />
+
+            <ImageButton
+                android:id="@+id/sound_grave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_background_light"
+                android:contentDescription="@string/play_sample_sound_button_description"
+                app:srcCompat="@drawable/ic_play_circle_outline_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/neutral_tone_pinyin_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/neutral_tone_pinyin_description"
+            android:textIsSelectable="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/prounce_activity_default_start_margin"
+            android:layout_marginEnd="@dimen/pronounce_activity_default_end_margin"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/neutral_tone_pinyin_text_example_description"
+            android:text="@string/neutral_tone_pinyin_text_example_description"
+            android:textIsSelectable="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/neutral_tone_side_note_description"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:text="@string/neutral_tone_side_note_description"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/default_bottom_margin_prounciation_activity"
+            android:contentDescription="@string/neutral_tone_side_note_example_description"
+            android:text="@string/neutral_tone_side_note_example_description"
+            android:textIsSelectable="true" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchEditTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:autofillHints="@string/search_hint_text"
+            android:hint="@string/search_hint_text"
+            android:inputType="textShortMessage"
+            android:background="@drawable/edit_text_border"
+            android:text="" />
+
+        <Button
+            android:id="@+id/commit_search_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/colorAccent"
+            android:drawableStart="@drawable/ic_search_bar_button"
+            android:onClick="commitSearch"
+            android:text="@string/search_button_description"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+
+        <LinearLayout
+            android:id="@+id/searchLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/searchEnglishTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:contentDescription="@string/search_text_view_results_description"
+                android:text="@string/search_no_results_default_text"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/searchChineseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:contentDescription="@string/search_text_view_results_description"
+                android:text="@string/search_no_results_default_text"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/searchChineseEnglishTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:contentDescription="@string/search_text_view_results_description"
+                android:text="@string/search_no_results_default_text"
+                android:textIsSelectable="true" />
+
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/search_sound_english_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/search_screen_play_sound_description"
+                    android:drawableStart="@drawable/ic_play_circle_outline_black_24dp"
+                    android:onClick="playEnglishSound"
+                    android:text="@string/search_term_english" />
+
+                <Button
+                    android:id="@+id/search_sound_chinese_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/search_screen_play_sound_description"
+                    android:drawableStart="@drawable/ic_play_circle_outline_black_24dp"
+                    android:onClick="playChineseSound"
+                    android:text="@string/search_term_chinese" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

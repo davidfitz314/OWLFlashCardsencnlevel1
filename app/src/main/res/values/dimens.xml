@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_bottom_margin_prounciation_activity">16dp</dimen>
+    <dimen name="prounce_activity_default_start_margin">16dp</dimen>
+    <dimen name="pronounce_activity_default_end_margin">16dp</dimen>
+</resources>

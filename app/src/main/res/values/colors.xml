@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#9CA238</color>
+    <color name="cardview_background_light">#FFFFFF</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="earthGreen">#9CA238</color>
+    <color name="disabled_color">#E0E0E0</color>
+    <color name="enabled_color">#000000</color>
+</resources>
