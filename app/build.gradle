@@ -43,5 +43,6 @@ dependencies {
     annotationProcessor "android.arch.lifecycle:compiler:$rootProject.archLifecycleVersion"
     //firebase
     implementation 'com.google.firebase:firebase-core:16.0.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
 }
 apply plugin: 'com.google.gms.google-services'
