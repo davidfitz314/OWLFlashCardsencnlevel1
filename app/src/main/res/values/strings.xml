@@ -81,5 +81,13 @@
     <string name="tap_to_flip_card_example_text">Tap to flip card</string>
     <string name="close_help_description">close help</string>
     <string name="dont_show_again_message_text">Dont Show Again</string>
+    <string name="transportation_title">Transportation</string>
+    <string name="shapes_and_colors_title">Shapes and Colors</string>
+    <string name="places_title">Places</string>
+    <string name="people_title">People</string>
+    <string name="objects_title">Objects</string>
+    <string name="numbers_title">Numbers</string>
+    <string name="food_title">Food</string>
+    <string name="body_parts_title">Body Parts</string>
 
 </resources>

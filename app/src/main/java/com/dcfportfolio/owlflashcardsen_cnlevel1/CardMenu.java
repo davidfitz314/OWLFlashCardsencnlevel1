@@ -82,7 +82,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent bpIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                bpIntent.putExtra(mTitle, "Body Parts");
+                bpIntent.putExtra(mTitle, getString(R.string.body_parts_title));
                 bpIntent.putExtra(mCategory, catBodyParts);
                 startActivity(bpIntent);
             }
@@ -92,7 +92,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent foodIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                foodIntent.putExtra(mTitle, "Food");
+                foodIntent.putExtra(mTitle, getString(R.string.food_title));
                 foodIntent.putExtra(mCategory, catFoods);
                 startActivity(foodIntent);
             }
@@ -102,7 +102,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent numbersIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                numbersIntent.putExtra(mTitle, "Numbers");
+                numbersIntent.putExtra(mTitle, getString(R.string.numbers_title));
                 numbersIntent.putExtra(mCategory, catNumbers);
                 startActivity(numbersIntent);
             }
@@ -112,7 +112,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent objectsIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                objectsIntent.putExtra(mTitle, "Objects");
+                objectsIntent.putExtra(mTitle, getString(R.string.objects_title));
                 objectsIntent.putExtra(mCategory, catObjects);
                 startActivity(objectsIntent);
             }
@@ -122,7 +122,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent peopleIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                peopleIntent.putExtra(mTitle, "People");
+                peopleIntent.putExtra(mTitle, getString(R.string.people_title));
                 peopleIntent.putExtra(mCategory, catPeople);
                 startActivity(peopleIntent);
             }
@@ -132,7 +132,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent placesIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                placesIntent.putExtra(mTitle, "Places");
+                placesIntent.putExtra(mTitle, getString(R.string.places_title));
                 placesIntent.putExtra(mCategory, catPlaces);
                 startActivity(placesIntent);
             }
@@ -142,7 +142,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent sbIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                sbIntent.putExtra(mTitle, "Shapes and Colors");
+                sbIntent.putExtra(mTitle, getString(R.string.shapes_and_colors_title));
                 sbIntent.putExtra(mCategory, catShapesColors);
                 startActivity(sbIntent);
             }
@@ -152,7 +152,7 @@ public class CardMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent transpIntent = new Intent(getApplicationContext(), CardPagerActivity.class);
-                transpIntent.putExtra(mTitle, "Transportation");
+                transpIntent.putExtra(mTitle, getString(R.string.transportation_title));
                 transpIntent.putExtra(mCategory, catTransportation);
                 startActivity(transpIntent);
             }
