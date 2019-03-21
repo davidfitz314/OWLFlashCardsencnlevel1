@@ -1,0 +1,1965 @@
+{
+  "cards":[
+    {
+      "English":"Dog",
+      "Chinese":"狗",
+      "Pinyin":"gǒu",
+      "SoundEn":"dog_en",
+      "SoundCn":"dog_cn",
+      "Category":1
+    },
+    {
+      "English":"Cat",
+      "Chinese":"猫",
+      "Pinyin":"māo",
+      "SoundEn":"cat_en",
+      "SoundCn":"cat_cn",
+      "Category":1
+    },
+    {
+      "English":"Horse",
+      "Chinese":"马",
+      "Pinyin":"mǎ",
+      "SoundEn":"horse_en",
+      "SoundCn":"horse_cn",
+      "Category":1
+    },
+    {
+      "English":"Chicken",
+      "Chinese":"鸡",
+      "Pinyin":"jī",
+      "SoundEn":"chiken_en",
+      "SoundCn":"chiken_cn",
+      "Category":1
+    },
+    {
+      "English":"Fish",
+      "Chinese":"鱼",
+      "Pinyin":"yú",
+      "SoundEn":"fish_en",
+      "SoundCn":"fish_cn",
+      "Category":1
+    },
+    {
+      "English":"Bear",
+      "Chinese":"熊",
+      "Pinyin":"xióng",
+      "SoundEn":"bear_en",
+      "SoundCn":"bear_cn",
+      "Category":1
+    },
+    {
+      "English":"Bird",
+      "Chinese":"鸟",
+      "Pinyin":"niǎo",
+      "SoundEn":"bird_en",
+      "SoundCn":"bird_cn",
+      "Category":1
+    },
+    {
+      "English":"Shark",
+      "Chinese":"鲨鱼",
+      "Pinyin":"shā yú",
+      "SoundEn":"shark_en",
+      "SoundCn":"shark_cn",
+      "Category":1
+    },
+    {
+      "English":"Snake",
+      "Chinese":"蛇",
+      "Pinyin":"shé",
+      "SoundEn":"snake_en",
+      "SoundCn":"snake_cn",
+      "Category":1
+    },
+    {
+      "English":"Pig",
+      "Chinese":"猪",
+      "Pinyin":"zhū",
+      "SoundEn":"pig_en",
+      "SoundCn":"pig_cn",
+      "Category":1
+    },
+    {
+      "English":"Lion",
+      "Chinese":"狮子",
+      "Pinyin":"shī zi",
+      "SoundEn":"lion_en",
+      "SoundCn":"lion_cn",
+      "Category":1
+    },
+    {
+      "English":"Turkey",
+      "Chinese":"火鸡",
+      "Pinyin":"huǒ jī",
+      "SoundEn":"turky_en",
+      "SoundCn":"turky_cn",
+      "Category":1
+    },
+    {
+      "English":"Wolf",
+      "Chinese":"狼",
+      "Pinyin":"láng",
+      "SoundEn":"wolf_en",
+      "SoundCn":"wolf_cn",
+      "Category":1
+    },
+    {
+      "English":"Spider",
+      "Chinese":"蜘蛛",
+      "Pinyin":"zhī zhū",
+      "SoundEn":"spider_en",
+      "SoundCn":"spider_cn",
+      "Category":1
+    },
+    {
+      "English":"Rabbit",
+      "Chinese":"兔子",
+      "Pinyin":"tù zǐ",
+      "SoundEn":"rabbit_en",
+      "SoundCn":"rabbit_cn",
+      "Category":1
+    },
+    {
+      "English":"Duck",
+      "Chinese":"鸭子",
+      "Pinyin":"yā zi",
+      "SoundEn":"duck_en",
+      "SoundCn":"duck_cn",
+      "Category":1
+    },
+    {
+      "English":"Deer",
+      "Chinese":"鹿",
+      "Pinyin":"lù",
+      "SoundEn":"deer_en",
+      "SoundCn":"deer_cn",
+      "Category":1
+    },
+    {
+      "English":"Cow",
+      "Chinese":"牛",
+      "Pinyin":"niú",
+      "SoundEn":"cow_en",
+      "SoundCn":"cow_cn",
+      "Category":1
+    },
+    {
+      "English":"Monkey",
+      "Chinese":"猴子",
+      "Pinyin":"Hóu zi",
+      "SoundEn":"monkey_en",
+      "SoundCn":"monkey_cn",
+      "Category":1
+    },
+    {
+      "English":"Lobster",
+      "Chinese":"龙虾",
+      "Pinyin":"lóng xiā",
+      "SoundEn":"lobster_en",
+      "SoundCn":"lobster_cn",
+      "Category":1
+    },
+    {
+      "English":"Ape",
+      "Chinese":"猿",
+      "Pinyin":"yuán",
+      "SoundEn":"ape_en",
+      "SoundCn":"ape_cn",
+      "Category":1
+    },
+    {
+      "English":"Pony",
+      "Chinese":"小马",
+      "Pinyin":"xiǎo mǎ",
+      "SoundEn":"pony_en",
+      "SoundCn":"pony_cn",
+      "Category":1
+    },
+    {
+      "English":"Eagle",
+      "Chinese":"鹰",
+      "Pinyin":"yīng",
+      "SoundEn":"eagle_en",
+      "SoundCn":"eagle_cn",
+      "Category":1
+    },
+    {
+      "English":"Dolphin",
+      "Chinese":"海豚",
+      "Pinyin":"hǎi tún",
+      "SoundEn":"dolpin_en",
+      "SoundCn":"dolpin_cn",
+      "Category":1
+    },
+    {
+      "English":"Bison",
+      "Chinese":"野牛",
+      "Pinyin":"yě niú",
+      "SoundEn":"bison_en",
+      "SoundCn":"bison_cn",
+      "Category":1
+    },
+    {
+      "English":"Tiger",
+      "Chinese":"老虎",
+      "Pinyin":"lǎo hǔ",
+      "SoundEn":"tiger_en",
+      "SoundCn":"tiger_cn",
+      "Category":1
+    },
+    {
+      "English":"Giraffe",
+      "Chinese":"长颈鹿",
+      "Pinyin":"cháng jǐng lù",
+      "SoundEn":"giraffe_en",
+      "SoundCn":"giraffe_cn",
+      "Category":1
+    },
+    {
+      "English":"Cheeta",
+      "Chinese":"猎豹",
+      "Pinyin":"liè bào",
+      "SoundEn":"cheeta_en",
+      "SoundCn":"cheeta_cn",
+      "Category":1
+    },
+    {
+      "English":"Octopus",
+      "Chinese":"章鱼",
+      "Pinyin":"zhāng yú",
+      "SoundEn":"octopus_en",
+      "SoundCn":"octopus_cn",
+      "Category":1
+    },
+    {
+      "English":"Squid",
+      "Chinese":"乌贼",
+      "Pinyin":"wū zéi",
+      "SoundEn":"squid_en",
+      "SoundCn":"squid_cn",
+      "Category":1
+    },
+    {
+      "English":"Crab",
+      "Chinese":"螃蟹",
+      "Pinyin":"páng xiè",
+      "SoundEn":"crab_en",
+      "SoundCn":"crab_cn",
+      "Category":1
+    },
+    {
+      "English":"Head",
+      "Chinese":"头",
+      "Pinyin":"tóu",
+      "SoundEn":"head_en",
+      "SoundCn":"head_cn",
+      "Category":2
+    },
+    {
+      "English":"Mouth",
+      "Chinese":"口",
+      "Pinyin":"kǒu",
+      "SoundEn":"mouth_en",
+      "SoundCn":"mouth_cn",
+      "Category":2
+    },
+    {
+      "English":"Ear",
+      "Chinese":"耳",
+      "Pinyin":"ěr",
+      "SoundEn":"ear_en",
+      "SoundCn":"ear_cn",
+      "Category":2
+    },
+    {
+      "English":"Nose",
+      "Chinese":"鼻子",
+      "Pinyin":"bí zi",
+      "SoundEn":"nose_en",
+      "SoundCn":"nose_cn",
+      "Category":2
+    },
+    {
+      "English":"Eye",
+      "Chinese":"眼睛",
+      "Pinyin":"yǎn jīng",
+      "SoundEn":"eye_en",
+      "SoundCn":"eye_cn",
+      "Category":2
+    },
+    {
+      "English":"Hair",
+      "Chinese":"头发",
+      "Pinyin":"tóu fà",
+      "SoundEn":"hair_en",
+      "SoundCn":"hair_cn",
+      "Category":2
+    },
+    {
+      "English":"Shoulder",
+      "Chinese":"肩",
+      "Pinyin":"jiān",
+      "SoundEn":"shoulder_en",
+      "SoundCn":"shoulder_cn",
+      "Category":2
+    },
+    {
+      "English":"Arm",
+      "Chinese":"臂膀",
+      "Pinyin":"bì bǎng",
+      "SoundEn":"arm_en",
+      "SoundCn":"arm_cn",
+      "Category":2
+    },
+    {
+      "English":"Elbow",
+      "Chinese":"手肘",
+      "Pinyin":"shǒu zhǒu",
+      "SoundEn":"elbow_en",
+      "SoundCn":"elbow_cn",
+      "Category":2
+    },
+    {
+      "English":"Hand",
+      "Chinese":"手",
+      "Pinyin":"shǒu",
+      "SoundEn":"hand_en",
+      "SoundCn":"hand_cn",
+      "Category":2
+    },
+    {
+      "English":"Finger",
+      "Chinese":"手指",
+      "Pinyin":"shǒu zhǐ",
+      "SoundEn":"finger_en",
+      "SoundCn":"finger_cn",
+      "Category":2
+    },
+    {
+      "English":"Chest",
+      "Chinese":"胸部",
+      "Pinyin":"xiōng bù",
+      "SoundEn":"chest_en",
+      "SoundCn":"chest_cn",
+      "Category":2
+    },
+    {
+      "English":"Waist",
+      "Chinese":"腰部",
+      "Pinyin":"yāo bù",
+      "SoundEn":"waist_en",
+      "SoundCn":"waist_cn",
+      "Category":2
+    },
+    {
+      "English":"Hip",
+      "Chinese":"臀部",
+      "Pinyin":"tún bù",
+      "SoundEn":"hip_en",
+      "SoundCn":"hip_cn",
+      "Category":2
+    },
+    {
+      "English":"Leg",
+      "Chinese":"腿",
+      "Pinyin":"tuǐ",
+      "SoundEn":"leg_en",
+      "SoundCn":"leg_cn",
+      "Category":2
+    },
+    {
+      "English":"Knee",
+      "Chinese":"膝盖",
+      "Pinyin":"xī gài",
+      "SoundEn":"knee_en",
+      "SoundCn":"knee_cn",
+      "Category":2
+    },
+    {
+      "English":"Foot",
+      "Chinese":"脚",
+      "Pinyin":"jiǎo",
+      "SoundEn":"foot_en",
+      "SoundCn":"foot_cn",
+      "Category":2
+    },
+    {
+      "English":"Toe",
+      "Chinese":"脚趾",
+      "Pinyin":"jiǎo zhǐ",
+      "SoundEn":"toe_en",
+      "SoundCn":"toe_cn",
+      "Category":2
+    },
+    {
+      "English":"Belly Button",
+      "Chinese":"肚脐",
+      "Pinyin":"dù qí",
+      "SoundEn":"belly_button_en",
+      "SoundCn":"belly_button_cn",
+      "Category":2
+    },
+    {
+      "English":"Back",
+      "Chinese":"背部",
+      "Pinyin":"bèi bù",
+      "SoundEn":"back_en",
+      "SoundCn":"back_cn",
+      "Category":2
+    },
+    {
+      "English":"Neck",
+      "Chinese":"颈部",
+      "Pinyin":"jǐng bù",
+      "SoundEn":"neck_en",
+      "SoundCn":"neck_cn",
+      "Category":2
+    },
+    {
+      "English":"Hamburger",
+      "Chinese":"汉堡包",
+      "Pinyin":"hàn bǎo bāo",
+      "SoundEn":"hamburger_en",
+      "SoundCn":"hamburger_cn",
+      "Category":3
+    },
+    {
+      "English":"Hot Dog",
+      "Chinese":"热狗",
+      "Pinyin":"rè gǒu",
+      "SoundEn":"hot_dog_en",
+      "SoundCn":"hot_dog_cn",
+      "Category":3
+    },
+    {
+      "English":"French Fries",
+      "Chinese":"炸薯条",
+      "Pinyin":"zhà shǔ tiáo",
+      "SoundEn":"french_fries_en",
+      "SoundCn":"french_fries_cn",
+      "Category":3
+    },
+    {
+      "English":"Pizza",
+      "Chinese":"比萨",
+      "Pinyin":"bǐ sà",
+      "SoundEn":"pizza_en",
+      "SoundCn":"pizza_cn",
+      "Category":3
+    },
+    {
+      "English":"Soda",
+      "Chinese":"苏打",
+      "Pinyin":"sū dǎ",
+      "SoundEn":"soda_en",
+      "SoundCn":"soda_cn",
+      "Category":3
+    },
+    {
+      "English":"Chicken Nuggets",
+      "Chinese":"鸡块",
+      "Pinyin":"jī kuài",
+      "SoundEn":"chiken_nuggets_en",
+      "SoundCn":"chiken_nuggets_cn",
+      "Category":3
+    },
+    {
+      "English":"Ice Cream",
+      "Chinese":"冰淇淋",
+      "Pinyin":"bīng qí lín",
+      "SoundEn":"ice_cream_en",
+      "SoundCn":"ice_cream_cn",
+      "Category":3
+    },
+    {
+      "English":"Donut",
+      "Chinese":"甜甜圈",
+      "Pinyin":"tián tián quān",
+      "SoundEn":"donut_en",
+      "SoundCn":"donut_cn",
+      "Category":3
+    },
+    {
+      "English":"Potato Chip",
+      "Chinese":"薯片",
+      "Pinyin":"shǔ piàn",
+      "SoundEn":"potato_chip_en",
+      "SoundCn":"potato_chip_cn",
+      "Category":3
+    },
+    {
+      "English":"Rice",
+      "Chinese":"米饭",
+      "Pinyin":"mǐ fàn",
+      "SoundEn":"rice_en",
+      "SoundCn":"rice_cn",
+      "Category":3
+    },
+    {
+      "English":"Noodle",
+      "Chinese":"面条",
+      "Pinyin":"miàn tiáo",
+      "SoundEn":"noodle_en",
+      "SoundCn":"noodle_cn",
+      "Category":3
+    },
+    {
+      "English":"Tofu",
+      "Chinese":"豆腐",
+      "Pinyin":"dòu fu",
+      "SoundEn":"tofu_en",
+      "SoundCn":"tofu_cn",
+      "Category":3
+    },
+    {
+      "English":"Meat",
+      "Chinese":"肉",
+      "Pinyin":"ròu",
+      "SoundEn":"meat_en",
+      "SoundCn":"meat_cn",
+      "Category":3
+    },
+    {
+      "English":"Egg",
+      "Chinese":"蛋",
+      "Pinyin":"dàn",
+      "SoundEn":"egg_en",
+      "SoundCn":"egg_cn",
+      "Category":3
+    },
+    {
+      "English":"Eggplant",
+      "Chinese":"茄子",
+      "Pinyin":"qié zi",
+      "SoundEn":"eggplant_en",
+      "SoundCn":"eggplant_cn",
+      "Category":3
+    },
+    {
+      "English":"Mushroom",
+      "Chinese":"蘑菇",
+      "Pinyin":"mó gū",
+      "SoundEn":"mushroom_en",
+      "SoundCn":"mushroom_cn",
+      "Category":3
+    },
+    {
+      "English":"Onion",
+      "Chinese":"洋葱",
+      "Pinyin":"yáng cōng",
+      "SoundEn":"onion_en",
+      "SoundCn":"onion_cn",
+      "Category":3
+    },
+    {
+      "English":"Carrot",
+      "Chinese":"胡萝卜",
+      "Pinyin":"hú luó bo",
+      "SoundEn":"carrot_en",
+      "SoundCn":"carrot_cn",
+      "Category":3
+    },
+    {
+      "English":"Bamboo Shoot",
+      "Chinese":"笋",
+      "Pinyin":"sǔn",
+      "SoundEn":"bamboo_shoot_en",
+      "SoundCn":"bamboo_shoot_cn",
+      "Category":3
+    },
+    {
+      "English":"Garlic",
+      "Chinese":"大蒜",
+      "Pinyin":"dà suàn",
+      "SoundEn":"garlic_en",
+      "SoundCn":"garlic_cn",
+      "Category":3
+    },
+    {
+      "English":"Ginger",
+      "Chinese":"生姜",
+      "Pinyin":"shēng jiāng",
+      "SoundEn":"ginger_en",
+      "SoundCn":"ginger_cn",
+      "Category":3
+    },
+    {
+      "English":"Egg Roll",
+      "Chinese":"蛋卷",
+      "Pinyin":"dàn juǎn",
+      "SoundEn":"egg_roll_en",
+      "SoundCn":"egg_roll_cn",
+      "Category":3
+    },
+    {
+      "English":"Apple",
+      "Chinese":"苹果",
+      "Pinyin":"píng guǒ",
+      "SoundEn":"apple_en",
+      "SoundCn":"apple_cn",
+      "Category":3
+    },
+    {
+      "English":"Banana",
+      "Chinese":"香蕉",
+      "Pinyin":"xiāng jiāo",
+      "SoundEn":"banana_en",
+      "SoundCn":"banana_cn",
+      "Category":3
+    },
+    {
+      "English":"Melon",
+      "Chinese":"瓜",
+      "Pinyin":"guā",
+      "SoundEn":"melon_en",
+      "SoundCn":"melon_cn",
+      "Category":3
+    },
+    {
+      "English":"Orange",
+      "Chinese":"桔子",
+      "Pinyin":"jú zi",
+      "SoundEn":"orange_food_en",
+      "SoundCn":"orange_food_cn",
+      "Category":3
+    },
+    {
+      "English":"Lettuce",
+      "Chinese":"生菜",
+      "Pinyin":"shēng cài",
+      "SoundEn":"lettuce_en",
+      "SoundCn":"lettuce_cn",
+      "Category":3
+    },
+    {
+      "English":"Bread",
+      "Chinese":"面包",
+      "Pinyin":"miàn bāo",
+      "SoundEn":"bread_en",
+      "SoundCn":"bread_cn",
+      "Category":3
+    },
+    {
+      "English":"Butter",
+      "Chinese":"牛油",
+      "Pinyin":"niú yóu",
+      "SoundEn":"butter_en",
+      "SoundCn":"butter_cn",
+      "Category":3
+    },
+    {
+      "English":"Peach",
+      "Chinese":"桃子",
+      "Pinyin":"táo zi",
+      "SoundEn":"peach_en",
+      "SoundCn":"peach_cn",
+      "Category":3
+    },
+    {
+      "English":"Grape",
+      "Chinese":"葡萄",
+      "Pinyin":"pú táo",
+      "SoundEn":"grape_en",
+      "SoundCn":"grape_cn",
+      "Category":3
+    },
+    {
+      "English":"Cherry",
+      "Chinese":"樱桃",
+      "Pinyin":"yīng táo",
+      "SoundEn":"cherry_en",
+      "SoundCn":"cherry_cn",
+      "Category":3
+    },
+    {
+      "English":"Water",
+      "Chinese":"水",
+      "Pinyin":"shuǐ",
+      "SoundEn":"water_en",
+      "SoundCn":"water_cn",
+      "Category":3
+    },
+    {
+      "English":"Salt",
+      "Chinese":"盐",
+      "Pinyin":"yán",
+      "SoundEn":"salt_en",
+      "SoundCn":"salt_cn",
+      "Category":3
+    },
+    {
+      "English":"Pepper",
+      "Chinese":"胡椒",
+      "Pinyin":"hú jiāo",
+      "SoundEn":"pepper_en",
+      "SoundCn":"pepper_cn",
+      "Category":3
+    },
+    {
+      "English":"0\nZero",
+      "Chinese":"零",
+      "Pinyin":"líng",
+      "SoundEn":"zero_en",
+      "SoundCn":"zero_cn",
+      "Category":4
+    },
+    {
+      "English":"1\nOne",
+      "Chinese":"一",
+      "Pinyin":"yī",
+      "SoundEn":"one_en",
+      "SoundCn":"one_cn",
+      "Category":4
+    },
+    {
+      "English":"2\nTwo",
+      "Chinese":"二",
+      "Pinyin":"èr",
+      "SoundEn":"two_en",
+      "SoundCn":"two_cn",
+      "Category":4
+    },
+    {
+      "English":"3\nThree",
+      "Chinese":"三",
+      "Pinyin":"sān",
+      "SoundEn":"three_en",
+      "SoundCn":"three_cn",
+      "Category":4
+    },
+    {
+      "English":"4\nFour",
+      "Chinese":"四",
+      "Pinyin":"sì",
+      "SoundEn":"four_en",
+      "SoundCn":"four_cn",
+      "Category":4
+    },
+    {
+      "English":"5\nFive",
+      "Chinese":"五",
+      "Pinyin":"wǔ",
+      "SoundEn":"five_en",
+      "SoundCn":"five_cn",
+      "Category":4
+    },
+    {
+      "English":"6\nSix",
+      "Chinese":"六",
+      "Pinyin":"liù",
+      "SoundEn":"six_en",
+      "SoundCn":"six_cn",
+      "Category":4
+    },
+    {
+      "English":"7\nSeven",
+      "Chinese":"七",
+      "Pinyin":"qī",
+      "SoundEn":"seven_en",
+      "SoundCn":"seven_cn",
+      "Category":4
+    },
+    {
+      "English":"8\nEight",
+      "Chinese":"八",
+      "Pinyin":"bā",
+      "SoundEn":"eight_en",
+      "SoundCn":"eight_cn",
+      "Category":4
+    },
+    {
+      "English":"9\nNine",
+      "Chinese":"九",
+      "Pinyin":"jiǔ",
+      "SoundEn":"nine_en",
+      "SoundCn":"nine_cn",
+      "Category":4
+    },
+    {
+      "English":"10\nTen",
+      "Chinese":"十",
+      "Pinyin":"shí",
+      "SoundEn":"ten_en",
+      "SoundCn":"ten_cn",
+      "Category":4
+    },
+    {
+      "English":"11\nEleven",
+      "Chinese":"十一",
+      "Pinyin":"shí yī",
+      "SoundEn":"eleven_en",
+      "SoundCn":"eleven_cn",
+      "Category":4
+    },
+    {
+      "English":"12\nTwelve",
+      "Chinese":"十二",
+      "Pinyin":"shí' èr",
+      "SoundEn":"twelve_en",
+      "SoundCn":"twelve_cn",
+      "Category":4
+    },
+    {
+      "English":"13\nThirteen",
+      "Chinese":"十三",
+      "Pinyin":"shí sān",
+      "SoundEn":"thirteen_en",
+      "SoundCn":"thirteen_cn",
+      "Category":4
+    },
+    {
+      "English":"14\nFourteen",
+      "Chinese":"十四",
+      "Pinyin":"shí sì",
+      "SoundEn":"fourteen_en",
+      "SoundCn":"fourteen_cn",
+      "Category":4
+    },
+    {
+      "English":"15\nFifteen",
+      "Chinese":"十五",
+      "Pinyin":"shí wǔ",
+      "SoundEn":"fifteen_en",
+      "SoundCn":"fifteen_cn",
+      "Category":4
+    },
+    {
+      "English":"16\nSixteen",
+      "Chinese":"十六",
+      "Pinyin":"shí liù",
+      "SoundEn":"sixteen_en",
+      "SoundCn":"sixteen_cn",
+      "Category":4
+    },
+    {
+      "English":"17\nSeventeen",
+      "Chinese":"十七",
+      "Pinyin":"shí qī",
+      "SoundEn":"seventeen_en",
+      "SoundCn":"seventeen_cn",
+      "Category":4
+    },
+    {
+      "English":"18\nEighteen",
+      "Chinese":"十八",
+      "Pinyin":"shí bā",
+      "SoundEn":"eighteen_en",
+      "SoundCn":"eighteen_cn",
+      "Category":4
+    },
+    {
+      "English":"19\nNineteen",
+      "Chinese":"十九",
+      "Pinyin":"shí jiǔ",
+      "SoundEn":"nineteen_en",
+      "SoundCn":"nineteen_cn",
+      "Category":4
+    },
+    {
+      "English":"20\nTwenty",
+      "Chinese":"二十",
+      "Pinyin":"èr shí",
+      "SoundEn":"twenty_en",
+      "SoundCn":"twenty_cn",
+      "Category":4
+    },
+    {
+      "English":"30\nThirty",
+      "Chinese":"三十",
+      "Pinyin":"sān shí",
+      "SoundEn":"thirty_en",
+      "SoundCn":"thirty_cn",
+      "Category":4
+    },
+    {
+      "English":"40\nFourty",
+      "Chinese":"四十",
+      "Pinyin":"sì shí",
+      "SoundEn":"fourty_en",
+      "SoundCn":"fourty_cn",
+      "Category":4
+    },
+    {
+      "English":"50\nFifty",
+      "Chinese":"五十",
+      "Pinyin":"wǔ shí",
+      "SoundEn":"fifty_en",
+      "SoundCn":"fifty_cn",
+      "Category":4
+    },
+    {
+      "English":"60\nSixty",
+      "Chinese":"六十",
+      "Pinyin":"liù shí",
+      "SoundEn":"sixty_en",
+      "SoundCn":"sixty_cn",
+      "Category":4
+    },
+    {
+      "English":"70\nSeventy",
+      "Chinese":"七十",
+      "Pinyin":"qī shí",
+      "SoundEn":"seventy_en",
+      "SoundCn":"seventy_cn",
+      "Category":4
+    },
+    {
+      "English":"80\nEighty",
+      "Chinese":"八十",
+      "Pinyin":"bā shí",
+      "SoundEn":"eighty_en",
+      "SoundCn":"eighty_cn",
+      "Category":4
+    },
+    {
+      "English":"90\nNinety",
+      "Chinese":"九十",
+      "Pinyin":"jiǔ shí",
+      "SoundEn":"ninety_en",
+      "SoundCn":"ninety_cn",
+      "Category":4
+    },
+    {
+      "English":"100\nOne Hundred",
+      "Chinese":"一百",
+      "Pinyin":"yī bǎi",
+      "SoundEn":"one_hundred_en",
+      "SoundCn":"one_hundred_cn",
+      "Category":4
+    },
+    {
+      "English":"1000\nOne Thousand",
+      "Chinese":"一千",
+      "Pinyin":"yī qiān",
+      "SoundEn":"one_thousand_en",
+      "SoundCn":"one_thousand_cn",
+      "Category":4
+    },
+    {
+      "English":"1000000\nOne Million",
+      "Chinese":"一百万",
+      "Pinyin":"yī bǎi wàn",
+      "SoundEn":"one_million_en",
+      "SoundCn":"one_million_cn",
+      "Category":4
+    },
+    {
+      "English":"Pen",
+      "Chinese":"笔",
+      "Pinyin":"bǐ",
+      "SoundEn":"pen_en",
+      "SoundCn":"pen_cn",
+      "Category":5
+    },
+    {
+      "English":"Pencil",
+      "Chinese":"铅笔",
+      "Pinyin":"qiān bǐ",
+      "SoundEn":"pencil_en",
+      "SoundCn":"pencil_cn",
+      "Category":5
+    },
+    {
+      "English":"Paper",
+      "Chinese":"纸",
+      "Pinyin":"zhǐ",
+      "SoundEn":"paper_en",
+      "SoundCn":"paper_cn",
+      "Category":5
+    },
+    {
+      "English":"Spoon",
+      "Chinese":"勺子",
+      "Pinyin":"sháo zi",
+      "SoundEn":"spoon_en",
+      "SoundCn":"spoon_cn",
+      "Category":5
+    },
+    {
+      "English":"Fork",
+      "Chinese":"叉子",
+      "Pinyin":"chā zi",
+      "SoundEn":"fork_en",
+      "SoundCn":"fork_cn",
+      "Category":5
+    },
+    {
+      "English":"Chopsticks",
+      "Chinese":"筷子",
+      "Pinyin":"kuài zi",
+      "SoundEn":"chopsticks_en",
+      "SoundCn":"chopsticks_cn",
+      "Category":5
+    },
+    {
+      "English":"Knife",
+      "Chinese":"刀",
+      "Pinyin":"dāo",
+      "SoundEn":"knife_en",
+      "SoundCn":"knife_cn",
+      "Category":5
+    },
+    {
+      "English":"Bowl",
+      "Chinese":"碗",
+      "Pinyin":"wǎn",
+      "SoundEn":"bowl_en",
+      "SoundCn":"bowl_cn",
+      "Category":5
+    },
+    {
+      "English":"Plate",
+      "Chinese":"盘子",
+      "Pinyin":"pán zi",
+      "SoundEn":"plate_en",
+      "SoundCn":"plate_cn",
+      "Category":5
+    },
+    {
+      "English":"Cup",
+      "Chinese":"杯子",
+      "Pinyin":"bēi zi",
+      "SoundEn":"cup_en",
+      "SoundCn":"cup_cn",
+      "Category":5
+    },
+    {
+      "English":"Table",
+      "Chinese":"桌子",
+      "Pinyin":"zhuō zi",
+      "SoundEn":"table_en",
+      "SoundCn":"table_cn",
+      "Category":5
+    },
+    {
+      "English":"Chair",
+      "Chinese":"椅子",
+      "Pinyin":"yǐ zi",
+      "SoundEn":"chair_en",
+      "SoundCn":"chair_cn",
+      "Category":5
+    },
+    {
+      "English":"Radio",
+      "Chinese":"收音机",
+      "Pinyin":"shōu yīn jī",
+      "SoundEn":"radio_en",
+      "SoundCn":"radio_cn",
+      "Category":5
+    },
+    {
+      "English":"Phone",
+      "Chinese":"电话",
+      "Pinyin":"diàn huà",
+      "SoundEn":"phone_en",
+      "SoundCn":"phone_cn",
+      "Category":5
+    },
+    {
+      "English":"Newspaper",
+      "Chinese":"报纸",
+      "Pinyin":"bào zhǐ",
+      "SoundEn":"newspaper_en",
+      "SoundCn":"newspaper_cn",
+      "Category":5
+    },
+    {
+      "English":"Watch",
+      "Chinese":"手表",
+      "Pinyin":"shǒu biǎo",
+      "SoundEn":"watch_en",
+      "SoundCn":"watch_cn",
+      "Category":5
+    },
+    {
+      "English":"Necklace",
+      "Chinese":"项链",
+      "Pinyin":"xiàng liàn",
+      "SoundEn":"necklace_en",
+      "SoundCn":"necklace_cn",
+      "Category":5
+    },
+    {
+      "English":"Shoes",
+      "Chinese":"鞋",
+      "Pinyin":"xié",
+      "SoundEn":"shoes_en",
+      "SoundCn":"shoes_cn",
+      "Category":5
+    },
+    {
+      "English":"Shirt",
+      "Chinese":"衬衫",
+      "Pinyin":"chèn shān",
+      "SoundEn":"shirt_en",
+      "SoundCn":"shirt_cn",
+      "Category":5
+    },
+    {
+      "English":"Pants",
+      "Chinese":"裤子",
+      "Pinyin":"kù zi",
+      "SoundEn":"pants_en",
+      "SoundCn":"pants_cn",
+      "Category":5
+    },
+    {
+      "English":"Dress",
+      "Chinese":"连衣裙",
+      "Pinyin":"lián yī qún",
+      "SoundEn":"dress_en",
+      "SoundCn":"dress_cn",
+      "Category":5
+    },
+    {
+      "English":"Skirt",
+      "Chinese":"短裙",
+      "Pinyin":"duǎn qún",
+      "SoundEn":"skirt_en",
+      "SoundCn":"skirt_cn",
+      "Category":5
+    },
+    {
+      "English":"Coat",
+      "Chinese":"外套",
+      "Pinyin":"wài tào",
+      "SoundEn":"coat_en",
+      "SoundCn":"coat_cn",
+      "Category":5
+    },
+    {
+      "English":"Hat",
+      "Chinese":"帽子",
+      "Pinyin":"mào zi",
+      "SoundEn":"hat_en",
+      "SoundCn":"hat_cn",
+      "Category":5
+    },
+    {
+      "English":"Bed",
+      "Chinese":"床",
+      "Pinyin":"chuáng",
+      "SoundEn":"bed_en",
+      "SoundCn":"bed_cn",
+      "Category":5
+    },
+    {
+      "English":"Couch",
+      "Chinese":"长椅",
+      "Pinyin":"cháng yǐ",
+      "SoundEn":"couch_en",
+      "SoundCn":"couch_cn",
+      "Category":5
+    },
+    {
+      "English":"Bag",
+      "Chinese":"袋子",
+      "Pinyin":"dài zi",
+      "SoundEn":"bag_en",
+      "SoundCn":"bag_cn",
+      "Category":5
+    },
+    {
+      "English":"Window",
+      "Chinese":"窗口",
+      "Pinyin":"chuāng kǒu",
+      "SoundEn":"window_en",
+      "SoundCn":"window_cn",
+      "Category":5
+    },
+    {
+      "English":"Door",
+      "Chinese":"门",
+      "Pinyin":"mén",
+      "SoundEn":"door_en",
+      "SoundCn":"door_cn",
+      "Category":5
+    },
+    {
+      "English":"Napkin",
+      "Chinese":"餐巾",
+      "Pinyin":"cān jīn",
+      "SoundEn":"napkin_en",
+      "SoundCn":"napkin_cn",
+      "Category":5
+    },
+    {
+      "English":"Flower",
+      "Chinese":"花",
+      "Pinyin":"huā",
+      "SoundEn":"flower_en",
+      "SoundCn":"flower_cn",
+      "Category":5
+    },
+    {
+      "English":"Toy",
+      "Chinese":"玩具",
+      "Pinyin":"wán jù",
+      "SoundEn":"toy_en",
+      "SoundCn":"toy_cn",
+      "Category":5
+    },
+    {
+      "English":"Letter",
+      "Chinese":"信",
+      "Pinyin":"xìn",
+      "SoundEn":"letter_en",
+      "SoundCn":"letter_cn",
+      "Category":5
+    },
+    {
+      "English":"Painting",
+      "Chinese":"绘画",
+      "Pinyin":"huì huà",
+      "SoundEn":"painting_en",
+      "SoundCn":"painting_cn",
+      "Category":5
+    },
+    {
+      "English":"Box",
+      "Chinese":"盒子",
+      "Pinyin":"hé zi",
+      "SoundEn":"box_en",
+      "SoundCn":"box_cn",
+      "Category":5
+    },
+    {
+      "English":"Sink",
+      "Chinese":"水槽",
+      "Pinyin":"shuǐ cáo",
+      "SoundEn":"sink_en",
+      "SoundCn":"sink_cn",
+      "Category":5
+    },
+    {
+      "English":"Television\n(TV)",
+      "Chinese":"电视",
+      "Pinyin":"diàn shì",
+      "SoundEn":"television_en",
+      "SoundCn":"television_cn",
+      "Category":5
+    },
+    {
+      "English":"Clock",
+      "Chinese":"时钟",
+      "Pinyin":"shí zhōng",
+      "SoundEn":"clock_en",
+      "SoundCn":"clock_cn",
+      "Category":5
+    },
+    {
+      "English":"Man",
+      "Chinese":"男人",
+      "Pinyin":"nán rén",
+      "SoundEn":"man_en",
+      "SoundCn":"man_cn",
+      "Category":6
+    },
+    {
+      "English":"Woman",
+      "Chinese":"女人",
+      "Pinyin":"nǚ rén",
+      "SoundEn":"woman_en",
+      "SoundCn":"woman_cn",
+      "Category":6
+    },
+    {
+      "English":"Child",
+      "Chinese":"儿童",
+      "Pinyin":"ér tóng",
+      "SoundEn":"child_en",
+      "SoundCn":"child_cn",
+      "Category":6
+    },
+    {
+      "English":"Boy",
+      "Chinese":"男孩",
+      "Pinyin":"nán hái",
+      "SoundEn":"boy_en",
+      "SoundCn":"boy_cn",
+      "Category":6
+    },
+    {
+      "English":"Girl",
+      "Chinese":"女孩",
+      "Pinyin":"nǚ hái",
+      "SoundEn":"girl_en",
+      "SoundCn":"girl_cn",
+      "Category":6
+    },
+    {
+      "English":"Student",
+      "Chinese":"学生",
+      "Pinyin":"xué shēng",
+      "SoundEn":"student_en",
+      "SoundCn":"student_cn",
+      "Category":6
+    },
+    {
+      "English":"Doctor",
+      "Chinese":"医生",
+      "Pinyin":"yī shēng",
+      "SoundEn":"doctor_en",
+      "SoundCn":"doctor_cn",
+      "Category":6
+    },
+    {
+      "English":"Police Officer",
+      "Chinese":"警察",
+      "Pinyin":"jǐng chá",
+      "SoundEn":"police_officer_en",
+      "SoundCn":"police_officer_cn",
+      "Category":6
+    },
+    {
+      "English":"Teacher",
+      "Chinese":"老师",
+      "Pinyin":"lǎo shī",
+      "SoundEn":"teacher_en",
+      "SoundCn":"teacher_cn",
+      "Category":6
+    },
+    {
+      "English":"Custodian",
+      "Chinese":"保管人",
+      "Pinyin":"bǎo guǎn rén",
+      "SoundEn":"custodian_en",
+      "SoundCn":"custodian_cn",
+      "Category":6
+    },
+    {
+      "English":"Salesman",
+      "Chinese":"推销员",
+      "Pinyin":"tuī xiāo yuán",
+      "SoundEn":"salesman_en",
+      "SoundCn":"salesman_cn",
+      "Category":6
+    },
+    {
+      "English":"Waiter",
+      "Chinese":"服务员",
+      "Pinyin":"fú wù yuán",
+      "SoundEn":"waiter_en",
+      "SoundCn":"waiter_cn",
+      "Category":6
+    },
+    {
+      "English":"Nurse",
+      "Chinese":"护士",
+      "Pinyin":"hù shì",
+      "SoundEn":"nurse_en",
+      "SoundCn":"nurse_cn",
+      "Category":6
+    },
+    {
+      "English":"Technician",
+      "Chinese":"技术员",
+      "Pinyin":"jì shù yuán",
+      "SoundEn":"technician_en",
+      "SoundCn":"technician_cn",
+      "Category":6
+    },
+    {
+      "English":"Boss",
+      "Chinese":"老板",
+      "Pinyin":"lǎo bǎn",
+      "SoundEn":"boss_en",
+      "SoundCn":"boss_cn",
+      "Category":6
+    },
+    {
+      "English":"Wife",
+      "Chinese":"妻子",
+      "Pinyin":"qī zi",
+      "SoundEn":"wife_en",
+      "SoundCn":"wife_cn",
+      "Category":6
+    },
+    {
+      "English":"Husband",
+      "Chinese":"丈夫",
+      "Pinyin":"zhàng fū",
+      "SoundEn":"husband_en",
+      "SoundCn":"husband_cn",
+      "Category":6
+    },
+    {
+      "English":"Daughter",
+      "Chinese":"女儿",
+      "Pinyin":"nǚ' ér",
+      "SoundEn":"daughter_en",
+      "SoundCn":"daughter_cn",
+      "Category":6
+    },
+    {
+      "English":"Son",
+      "Chinese":"儿子",
+      "Pinyin":"ér zi",
+      "SoundEn":"son_en",
+      "SoundCn":"son_cn",
+      "Category":6
+    },
+    {
+      "English":"Baby",
+      "Chinese":"宝宝",
+      "Pinyin":"bǎobāo",
+      "SoundEn":"baby_en",
+      "SoundCn":"baby_cn",
+      "Category":6
+    },
+    {
+      "English":"Delivery Driver",
+      "Chinese":"送货司机",
+      "Pinyin":"sòng huò sī jī",
+      "SoundEn":"delivery_driver_en",
+      "SoundCn":"delivery_driver_cn",
+      "Category":6
+    },
+    {
+      "English":"Friend",
+      "Chinese":"朋友",
+      "Pinyin":"péng yǒu",
+      "SoundEn":"friend_en",
+      "SoundCn":"friend_cn",
+      "Category":6
+    },
+    {
+      "English":"Neighbor",
+      "Chinese":"邻居",
+      "Pinyin":"lín jū",
+      "SoundEn":"neighbor_en",
+      "SoundCn":"neighbor_cn",
+      "Category":6
+    },
+    {
+      "English":"Stranger",
+      "Chinese":"陌生人",
+      "Pinyin":"mò shēng rén",
+      "SoundEn":"stranger_en",
+      "SoundCn":"stranger_cn",
+      "Category":6
+    },
+    {
+      "English":"House",
+      "Chinese":"房子",
+      "Pinyin":"fáng zi",
+      "SoundEn":"house_en",
+      "SoundCn":"house_cn",
+      "Category":7
+    },
+    {
+      "English":"Bathroom",
+      "Chinese":"浴室",
+      "Pinyin":"yù shì",
+      "SoundEn":"bathroom_en",
+      "SoundCn":"bathroom_cn",
+      "Category":7
+    },
+    {
+      "English":"Grocery Store",
+      "Chinese":"杂货店",
+      "Pinyin":"zá huò diàn",
+      "SoundEn":"grocery_store_en",
+      "SoundCn":"grocery_store_cn",
+      "Category":7
+    },
+    {
+      "English":"Supermarket",
+      "Chinese":"超级市场",
+      "Pinyin":"chāo jí shì chǎng",
+      "SoundEn":"supermarket_en",
+      "SoundCn":"supermarket_cn",
+      "Category":7
+    },
+    {
+      "English":"Gas Station",
+      "Chinese":"加油站",
+      "Pinyin":"jiā yóu zhàn",
+      "SoundEn":"gas_station_en",
+      "SoundCn":"gas_station_cn",
+      "Category":7
+    },
+    {
+      "English":"Mall",
+      "Chinese":"购物中心",
+      "Pinyin":"gòu wù zhōng xīn",
+      "SoundEn":"mall_en",
+      "SoundCn":"mall_cn",
+      "Category":7
+    },
+    {
+      "English":"Skyscraper",
+      "Chinese":"摩天大楼",
+      "Pinyin":"mó tiān dà lóu",
+      "SoundEn":"skyscraper_en",
+      "SoundCn":"skyscraper_cn",
+      "Category":7
+    },
+    {
+      "English":"Apartment",
+      "Chinese":"公寓",
+      "Pinyin":"gōng yù",
+      "SoundEn":"apartment_en",
+      "SoundCn":"apartment_cn",
+      "Category":7
+    },
+    {
+      "English":"Store",
+      "Chinese":"商店",
+      "Pinyin":"shāng diàn",
+      "SoundEn":"store_en",
+      "SoundCn":"store_cn",
+      "Category":7
+    },
+    {
+      "English":"Train Station",
+      "Chinese":"火车站",
+      "Pinyin":"huǒ chē zhàn",
+      "SoundEn":"train_station_en",
+      "SoundCn":"train_station_cn",
+      "Category":7
+    },
+    {
+      "English":"Zoo",
+      "Chinese":"动物园",
+      "Pinyin":"dòng wù yuán",
+      "SoundEn":"zoo_en",
+      "SoundCn":"zoo_cn",
+      "Category":7
+    },
+    {
+      "English":"Aquarium",
+      "Chinese":"水族馆",
+      "Pinyin":"shuǐ zú guǎn",
+      "SoundEn":"aquarium_en",
+      "SoundCn":"aquarium_cn",
+      "Category":7
+    },
+    {
+      "English":"City Hall",
+      "Chinese":"市政厅",
+      "Pinyin":"shì zhèng tīng",
+      "SoundEn":"city_hall_en",
+      "SoundCn":"city_hall_cn",
+      "Category":7
+    },
+    {
+      "English":"Jail",
+      "Chinese":"监狱",
+      "Pinyin":"jiān yù",
+      "SoundEn":"jail_en",
+      "SoundCn":"jail_cn",
+      "Category":7
+    },
+    {
+      "English":"Stadium",
+      "Chinese":"体育场",
+      "Pinyin":"tǐ yù chǎng",
+      "SoundEn":"stadium_en",
+      "SoundCn":"stadium_cn",
+      "Category":7
+    },
+    {
+      "English":"Park",
+      "Chinese":"公园",
+      "Pinyin":"gōng yuán",
+      "SoundEn":"park_en",
+      "SoundCn":"park_cn",
+      "Category":7
+    },
+    {
+      "English":"Beach",
+      "Chinese":"海滩",
+      "Pinyin":"hǎi tān",
+      "SoundEn":"beach_en",
+      "SoundCn":"beach_cn",
+      "Category":7
+    },
+    {
+      "English":"Forest",
+      "Chinese":"森林",
+      "Pinyin":"sēn lín",
+      "SoundEn":"forest_en",
+      "SoundCn":"forest_cn",
+      "Category":7
+    },
+    {
+      "English":"Mountain",
+      "Chinese":"山",
+      "Pinyin":"shān",
+      "SoundEn":"mountain_en",
+      "SoundCn":"mountain_cn",
+      "Category":7
+    },
+    {
+      "English":"Ocean",
+      "Chinese":"海洋",
+      "Pinyin":"hǎi yáng",
+      "SoundEn":"ocean_en",
+      "SoundCn":"ocean_cn",
+      "Category":7
+    },
+    {
+      "English":"River",
+      "Chinese":"河",
+      "Pinyin":"hé",
+      "SoundEn":"river_en",
+      "SoundCn":"river_cn",
+      "Category":7
+    },
+    {
+      "English":"Lake",
+      "Chinese":"湖",
+      "Pinyin":"hú",
+      "SoundEn":"lake_en",
+      "SoundCn":"lake_cn",
+      "Category":7
+    },
+    {
+      "English":"Desert",
+      "Chinese":"沙漠",
+      "Pinyin":"shā mò",
+      "SoundEn":"desert_en",
+      "SoundCn":"desert_cn",
+      "Category":7
+    },
+    {
+      "English":"Kitchen",
+      "Chinese":"厨房",
+      "Pinyin":"chú fáng",
+      "SoundEn":"kitchen_en",
+      "SoundCn":"kitchen_cn",
+      "Category":7
+    },
+    {
+      "English":"Bedroom",
+      "Chinese":"卧室",
+      "Pinyin":"wò shì",
+      "SoundEn":"bedroom_en",
+      "SoundCn":"bedroom_cn",
+      "Category":7
+    },
+    {
+      "English":"School",
+      "Chinese":"学校",
+      "Pinyin":"xué xiào",
+      "SoundEn":"school_en",
+      "SoundCn":"school_cn",
+      "Category":7
+    },
+    {
+      "English":"Hospital",
+      "Chinese":"医院",
+      "Pinyin":"yī yuàn",
+      "SoundEn":"hospital_en",
+      "SoundCn":"hospital_cn",
+      "Category":7
+    },
+    {
+      "English":"Police Station",
+      "Chinese":"警察局",
+      "Pinyin":"jǐng chá jú",
+      "SoundEn":"police_station_en",
+      "SoundCn":"police_station_cn",
+      "Category":7
+    },
+    {
+      "English":"Office",
+      "Chinese":"办公室",
+      "Pinyin":"bàn gōng shì",
+      "SoundEn":"office_en",
+      "SoundCn":"office_cn",
+      "Category":7
+    },
+    {
+      "English":"Black",
+      "Chinese":"黑色",
+      "Pinyin":"hēi sè",
+      "SoundEn":"black_en",
+      "SoundCn":"black_cn",
+      "Category":8
+    },
+    {
+      "English":"White",
+      "Chinese":"白色",
+      "Pinyin":"bái sè",
+      "SoundEn":"white_en",
+      "SoundCn":"white_cn",
+      "Category":8
+    },
+    {
+      "English":"Gray",
+      "Chinese":"灰色",
+      "Pinyin":"huī sè",
+      "SoundEn":"gray_en",
+      "SoundCn":"gray_cn",
+      "Category":8
+    },
+    {
+      "English":"Purple",
+      "Chinese":"紫色",
+      "Pinyin":"zǐ sè",
+      "SoundEn":"purple_en",
+      "SoundCn":"purple_cn",
+      "Category":8
+    },
+    {
+      "English":"Blue",
+      "Chinese":"蓝色",
+      "Pinyin":"lán sè",
+      "SoundEn":"blue_en",
+      "SoundCn":"blue_cn",
+      "Category":8
+    },
+    {
+      "English":"Green",
+      "Chinese":"绿色",
+      "Pinyin":"lǜ sè",
+      "SoundEn":"green_en",
+      "SoundCn":"green_cn",
+      "Category":8
+    },
+    {
+      "English":"Yellow",
+      "Chinese":"黄色",
+      "Pinyin":"huáng sè",
+      "SoundEn":"yellow_en",
+      "SoundCn":"yellow_cn",
+      "Category":8
+    },
+    {
+      "English":"Orange",
+      "Chinese":"橙色",
+      "Pinyin":"chéng sè",
+      "SoundEn":"orange_color_en",
+      "SoundCn":"orange_color_cn",
+      "Category":8
+    },
+    {
+      "English":"Red",
+      "Chinese":"红色",
+      "Pinyin":"hóng sè",
+      "SoundEn":"red_en",
+      "SoundCn":"red_cn",
+      "Category":8
+    },
+    {
+      "English":"Brown",
+      "Chinese":"棕色",
+      "Pinyin":"zōng sè",
+      "SoundEn":"brown_en",
+      "SoundCn":"brown_cn",
+      "Category":8
+    },
+    {
+      "English":"Circle",
+      "Chinese":"圆",
+      "Pinyin":"yuán",
+      "SoundEn":"circle_en",
+      "SoundCn":"circle_cn",
+      "Category":8
+    },
+    {
+      "English":"Triangle",
+      "Chinese":"三角形",
+      "Pinyin":"sān jiǎo xíng",
+      "SoundEn":"triangle_en",
+      "SoundCn":"triangle_cn",
+      "Category":8
+    },
+    {
+      "English":"Square",
+      "Chinese":"正方形",
+      "Pinyin":"zhèng fāng xíng",
+      "SoundEn":"square_en",
+      "SoundCn":"square_cn",
+      "Category":8
+    },
+    {
+      "English":"Star",
+      "Chinese":"星星",
+      "Pinyin":"xīng xīng",
+      "SoundEn":"star_en",
+      "SoundCn":"star_cn",
+      "Category":8
+    },
+    {
+      "English":"Oval",
+      "Chinese":"椭圆",
+      "Pinyin":"tuǒ yuán",
+      "SoundEn":"oval_en",
+      "SoundCn":"oval_cn",
+      "Category":8
+    },
+    {
+      "English":"Rectangle",
+      "Chinese":"长方形",
+      "Pinyin":"cháng fāng xíng",
+      "SoundEn":"rectangle_en",
+      "SoundCn":"rectangle_cn",
+      "Category":8
+    },
+    {
+      "English":"Cone",
+      "Chinese":"锥体",
+      "Pinyin":"zhuī tǐ",
+      "SoundEn":"cone_en",
+      "SoundCn":"cone_cn",
+      "Category":8
+    },
+    {
+      "English":"Polygon",
+      "Chinese":"多边形",
+      "Pinyin":"duō biān xíng",
+      "SoundEn":"polygon_en",
+      "SoundCn":"polygon_cn",
+      "Category":8
+    },
+    {
+      "English":"Hexagon",
+      "Chinese":"六边形",
+      "Pinyin":"liù biān xíng",
+      "SoundEn":"hexagon_en",
+      "SoundCn":"hexagon_cn",
+      "Category":8
+    },
+    {
+      "English":"Octagon",
+      "Chinese":"八边形",
+      "Pinyin":"bā biān xíng",
+      "SoundEn":"octagon_en",
+      "SoundCn":"octagon_cn",
+      "Category":8
+    },
+    {
+      "English":"Airplane",
+      "Chinese":"飞机",
+      "Pinyin":"fēi jī",
+      "SoundEn":"airplane_en",
+      "SoundCn":"airplane_cn",
+      "Category":9
+    },
+    {
+      "English":"Helicopter",
+      "Chinese":"直升机",
+      "Pinyin":"zhí shēng jī",
+      "SoundEn":"helicopter_en",
+      "SoundCn":"helicopter_cn",
+      "Category":9
+    }
+  ,
+    {
+      "English":"Jet",
+      "Chinese":"喷气式飞机",
+      "Pinyin":"pēn qì shì fēi jī",
+      "SoundEn":"jet_en",
+      "SoundCn":"jet_cn",
+      "Category":9
+    },
+    {
+      "English":"Balloon",
+      "Chinese":"气球",
+      "Pinyin":"qì qiú",
+      "SoundEn":"balloon_en",
+      "SoundCn":"balloon_cn",
+      "Category":9
+    },
+    {
+      "English":"Ship",
+      "Chinese":"船",
+      "Pinyin":"chuán",
+      "SoundEn":"ship_en",
+      "SoundCn":"ship_cn",
+      "Category":9
+    },
+    {
+      "English":"Bicycle",
+      "Chinese":"自行车",
+      "Pinyin":"zì xíng chē",
+      "SoundEn":"bicycle_en",
+      "SoundCn":"bicycle_cn",
+      "Category":9
+    },
+    {
+      "English":"Roller Skates",
+      "Chinese":"溜冰鞋",
+      "Pinyin":"liū bīng xié",
+      "SoundEn":"rollar_skates_en",
+      "SoundCn":"rollar_skates_cn",
+      "Category":9
+    },
+    {
+      "English":"Skate Board",
+      "Chinese":"滑板",
+      "Pinyin":"huá bǎn",
+      "SoundEn":"skate_board_en",
+      "SoundCn":"skate_board_cn",
+      "Category":9
+    },
+    {
+      "English":"Car",
+      "Chinese":"汽车",
+      "Pinyin":"qì chē",
+      "SoundEn":"car_en",
+      "SoundCn":"car_cn",
+      "Category":9
+    },
+    {
+      "English":"Truck",
+      "Chinese":"卡车",
+      "Pinyin":"kǎ chē",
+      "SoundEn":"truck_en",
+      "SoundCn":"truck_cn",
+      "Category":9
+    },
+    {
+      "English":"Bus",
+      "Chinese":"公共汽车",
+      "Pinyin":"gōng gòng qì chē",
+      "SoundEn":"bus_en",
+      "SoundCn":"bus_cn",
+      "Category":9
+    },
+    {
+      "English":"Train",
+      "Chinese":"火车",
+      "Pinyin":"huǒ chē",
+      "SoundEn":"train_en",
+      "SoundCn":"train_cn",
+      "Category":9
+    },
+    {
+      "English":"Subway",
+      "Chinese":"地铁",
+      "Pinyin":"dì tiě",
+      "SoundEn":"subway_en",
+      "SoundCn":"subway_cn",
+      "Category":9
+    },
+    {
+      "English":"Taxi",
+      "Chinese":"出租车",
+      "Pinyin":"chū zū chē",
+      "SoundEn":"taxi_en",
+      "SoundCn":"taxi_cn",
+      "Category":9
+    },
+    {
+      "English":"Motorcycle",
+      "Chinese":"摩托车",
+      "Pinyin":"mó tuō chē",
+      "SoundEn":"motorcycle_en",
+      "SoundCn":"motorcycle_cn",
+      "Category":9
+    },
+    {
+      "English":"Skis",
+      "Chinese":"滑雪板",
+      "Pinyin":"huá xuě bǎn",
+      "SoundEn":"skis_en",
+      "SoundCn":"skis_cn",
+      "Category":9
+    }
+  ]
+}
