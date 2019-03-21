@@ -77,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
             TODO implement better system for sound loading
             TODO update database, remove fallback to destructive migration method and implement better method
             TODO create unit tests for each class.
+            TODO update search page text sizes, so longest words dont go off screen.
+            TODO update sound error code from -1 to 0 for checking whether resources was found
          */
 
 

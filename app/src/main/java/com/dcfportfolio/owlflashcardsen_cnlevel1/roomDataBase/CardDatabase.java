@@ -7,13 +7,23 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import com.dcfportfolio.owlflashcardsen_cnlevel1.R;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 @Database(entities = {Card.class}, version = 1, exportSchema = false)
 public abstract class CardDatabase extends RoomDatabase {
     public abstract CardDao cardDao();
     private static CardDatabase INSTANCE;
+    private static Context mContext;
 
     public static CardDatabase getDatabase(final Context context){
         if (INSTANCE == null){
@@ -23,6 +33,7 @@ public abstract class CardDatabase extends RoomDatabase {
                             .fallbackToDestructiveMigration()
                             .addCallback(sRoomDatabaseCallback)
                             .build();
+                    mContext = context.getApplicationContext();
                 }
             }
         }
@@ -39,6 +50,7 @@ public abstract class CardDatabase extends RoomDatabase {
 
     private static class PopulateDbAsync extends AsyncTask<Void, Void, Void>{
         private final CardDao mDao;
+
         private final int cat1 = 1;
         private final int cat2 = 2;
         private final int cat3 = 3;
@@ -52,6 +64,7 @@ public abstract class CardDatabase extends RoomDatabase {
         PopulateDbAsync(CardDatabase db){
             mDao = db.cardDao();
         }
+/*
 
         //Cards to be Populated Strings Section
         String[] cardListStrings = {
@@ -466,7 +479,7 @@ public abstract class CardDatabase extends RoomDatabase {
                 R.raw.watch_en,R.raw.watch_cn,cat5,
                 R.raw.necklace_en,R.raw.necklace_cn,cat5,
                 R.raw.shoes_en,R.raw.shoes_cn,cat5,
-                R.raw.shirt_e,R.raw.shirt_cn,cat5,
+                R.raw.shirt_en,R.raw.shirt_cn,cat5,
                 R.raw.pants_en,R.raw.pants_cn,cat5,
                 R.raw.dress_en,R.raw.dress_cn,cat5,
                 R.raw.skirt_en,R.raw.skirt_cn,cat5,
@@ -564,7 +577,7 @@ public abstract class CardDatabase extends RoomDatabase {
                 R.raw.cone_en,R.raw.cone_cn,cat8,
                 R.raw.polygon_en,R.raw.polygon_cn,cat8,
                 R.raw.hexagon_en,R.raw.hexagon_cn,cat8,
-                R.raw.octagan_en,R.raw.octagon_cn,cat8,
+                R.raw.octagon_en,R.raw.octagon_cn,cat8,
 
                 //cat9 Transportation
                 R.raw.airplane_en,R.raw.airplane_cn,cat9,
@@ -585,20 +598,74 @@ public abstract class CardDatabase extends RoomDatabase {
                 R.raw.skis_en,R.raw.skis_cn,cat9
         };
 
+*/
 
         @Override
         protected Void doInBackground(Void... voids) {
             //reset database to blank slate
             mDao.deleteAll();
+            Context localContext = mContext.getApplicationContext();
 
             //if (mDao.getAnyCard().length < 1){
             //Insert Cards
-            for (int i=0; i<cardListStrings.length; i=i+3){
+            /*for (int i=0; i<cardListStrings.length; i=i+3){
                 Card card = new Card(cardListStrings[i], cardListStrings[i+1], cardListStrings[i+2], soundsAndCategories[i], soundsAndCategories[i+1], soundsAndCategories[i+2]);
                 mDao.insertCard(card);
-            }
+            }*/
             //}
+            loadJSONData(localContext);
             return null;
+        }
+
+        private void loadJSONData(Context context){
+            Context localContext = context.getApplicationContext();
+            String json = loadJSONString();
+            try {
+                if (json!= null) {
+                    JSONObject jsonObject = new JSONObject(json);
+                    JSONArray jArray = jsonObject.getJSONArray("cards");
+                    for (int i = 0; i < jArray.length(); ++i) {
+                        JSONObject object = jArray.getJSONObject(i);
+                        String english = object.getString("English");// english
+                        String chinese = object.getString("Chinese"); // chinese
+                        String pinyin = object.getString("Pinyin"); // pinyin
+                        String soundEnName = object.getString("SoundEn"); //sound english
+                        String soundCnName = object.getString("SoundCn"); //sound chinese
+                        int category = object.getInt("Category"); // category
+                        Log.d("LOADING_NEW_CARDS", english+" "+chinese);
+                        //get Resource Ids
+                        int enResourceId = localContext.getResources().getIdentifier(soundEnName, "raw", localContext.getPackageName());
+                        int cnResourceId = localContext.getResources().getIdentifier(soundCnName, "raw", localContext.getPackageName());
+                        if (enResourceId == 0){
+                            enResourceId = -1;
+                        }
+                        if (cnResourceId == 0){
+                            cnResourceId = -1;
+                        }
+                        Card card = new Card(english, chinese, pinyin, enResourceId, cnResourceId, category);
+                        mDao.insertCard(card);
+                    }
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        private String loadJSONString(){
+            String json = null;
+            try {
+                InputStream is = mContext.getResources().openRawResource(R.raw.card_json_data);
+                int size = is.available();
+                byte[] buffer = new byte[size];
+                is.read(buffer);
+                is.close();
+                json = new String(buffer, StandardCharsets.UTF_8);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+            Log.d("JSONSTRING ", json);
+            return json;
         }
     }
 }
