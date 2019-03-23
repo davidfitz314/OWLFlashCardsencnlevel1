@@ -34,21 +34,10 @@ import com.dcfportfolio.owlflashcardsen_cnlevel1.roomDataBase.Card;
 import com.dcfportfolio.owlflashcardsen_cnlevel1.roomDataBase.CardViewModel;
 import com.google.firebase.iid.FirebaseInstanceId;
 
-/**
- * MainActivity class
- * Entry point for App
- * Displays Logos and title
- */
 public class MainActivity extends AppCompatActivity {
     private SharedPreferences mPreferences;
     private TextView mTitleView;
 
-    /**
-     * Displays alert dialog for inserting user name
-     * Initializes the Database for faster subsequent loading
-     * initializes Textviews and Image views for titles and logos
-     * @param savedInstanceState
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         /*
             TODO remove stack print traces, log, and debug tags before publishing
             TODO update database, remove fallback to destructive migration method and implement better method
-            TODO create unit tests for each class.
+
          */
 
 
@@ -146,10 +135,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Launches Activity intent for going to CardMenu.class
-     * @param view
-     */
     public void goToMenuPage(View view) {
         Intent cardCatIntent = new Intent(this, CardMenu.class);
         startActivity(cardCatIntent);
