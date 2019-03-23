@@ -37,8 +37,6 @@ import com.google.firebase.iid.FirebaseInstanceId;
 public class MainActivity extends AppCompatActivity {
     private SharedPreferences mPreferences;
     private TextView mTitleView;
-    private static int O_PERMISSION_ACCESS_NETWORK_STATE = 0;
-    private static int O_PERMISSION_INTERNET = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        /*TODO create string resources and content descriptions for all buttons and textviews
+        /*
             TODO remove stack print traces, log, and debug tags before publishing
             TODO implement better system for sound loading
             TODO update database, remove fallback to destructive migration method and implement better method

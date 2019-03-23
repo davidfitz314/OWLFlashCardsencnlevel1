@@ -48,8 +48,8 @@ public class Card {
         this.mEnglish = english_in;
         this.mChinese = chinese_in;
         this.mChineseEnglish = chinese_english_in;
-        this.mSoundEn = -1;
-        this.mSoundCn = -1;
+        this.mSoundEn = 0;
+        this.mSoundCn = 0;
         this.mCategory = category_in;
     }
 
@@ -57,9 +57,9 @@ public class Card {
         this.mEnglish = "";
         this.mChinese = "";
         this.mChineseEnglish = "";
-        this.mSoundEn = -1;
-        this.mSoundCn = -1;
-        this.mCategory = -1;
+        this.mSoundEn = 0;
+        this.mSoundCn = 0;
+        this.mCategory = 0;
     }
 
     public int getId() {
