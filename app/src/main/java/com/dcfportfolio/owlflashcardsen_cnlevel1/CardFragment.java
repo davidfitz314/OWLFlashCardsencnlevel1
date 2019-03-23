@@ -129,15 +129,9 @@ public class CardFragment extends Fragment {
         Bundle arguments = getArguments();
         int soundE = 0;
         int soundC = 0;
-        try {
-            soundE = arguments.getInt(ARG_SECTION_SOUND_ENGLISH);
-            soundC = arguments.getInt(ARG_SECTION_SOUND_CHINESE);
-        } catch (NullPointerException e){
-            //TODO sound problems
-            Log.d("SOUNDPROBLEMS", "dont care if skipped for now");
-            soundE = 0;
-            soundC = 0;
-        }
+        soundE = arguments.getInt(ARG_SECTION_SOUND_ENGLISH, 0);
+        soundC = arguments.getInt(ARG_SECTION_SOUND_CHINESE, 0);
+
         if (soundE != 0) {
             soundEnglish = soundPool.load(getContext(), soundE, 1);
         }
