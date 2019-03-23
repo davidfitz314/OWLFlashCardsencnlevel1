@@ -19,12 +19,22 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * CardDatabase class
+ * Intializes the database as a singleton
+ */
 @Database(entities = {Card.class}, version = 1, exportSchema = false)
 public abstract class CardDatabase extends RoomDatabase {
     public abstract CardDao cardDao();
     private static CardDatabase INSTANCE;
     private static Context mContext;
 
+    /**
+     * getDatabase grabs the database instance.
+     * if instance is null, creates a new instance.
+     * @param context
+     * @return
+     */
     public static CardDatabase getDatabase(final Context context){
         if (INSTANCE == null){
             synchronized (CardDatabase.class){

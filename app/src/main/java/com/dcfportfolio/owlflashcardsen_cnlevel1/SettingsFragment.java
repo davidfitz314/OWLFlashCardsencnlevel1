@@ -19,6 +19,11 @@ import android.widget.TextView;
 public class SettingsFragment extends PreferenceFragmentCompat {
     private SharedPreferences mPreferences;
 
+    /**
+     * Implements listeners for changes in the preferences.
+     * @param bundle
+     * @param s
+     */
     @Override
     public void onCreatePreferences(Bundle bundle, String s) {
         setPreferencesFromResource(R.xml.preferences, s);

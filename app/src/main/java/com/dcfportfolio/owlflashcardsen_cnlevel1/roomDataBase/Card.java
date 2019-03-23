@@ -6,6 +6,11 @@ import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
 
+/**
+ * Card class
+ * Allows creation of card objects.
+ * @Entities int id, String mEnglish, String mChinese, String mChineseEnglish, int mSoundEn, int mSoundCn, int mCategory
+ */
 @Entity(tableName = "card_table")
 public class Card {
     @PrimaryKey(autoGenerate = true)

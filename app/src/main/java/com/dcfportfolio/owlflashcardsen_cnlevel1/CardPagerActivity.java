@@ -25,12 +25,21 @@ import com.dcfportfolio.owlflashcardsen_cnlevel1.roomDataBase.CardViewModel;
 
 import java.util.List;
 
+/**
+ * CardPagerActivity class
+ * Binds fragments to pages and loads as needed.
+ */
 public class CardPagerActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private CardViewModel mViewModel;
     private CardPagerActivity.InnerPageAdapter mAdapter;
     private SharedPreferences mPreferences;
 
+    /**
+     * Connects to the view model for loading the needed cards
+     * displays card help screen fragment
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,6 +92,9 @@ public class CardPagerActivity extends AppCompatActivity {
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
     }
 
+    /**
+     * Inner Page Adapter static class for updating card fragments and placing them into pages
+     */
     public static class InnerPageAdapter extends FragmentStatePagerAdapter {
         private List<Card> mCurrentCards;
 
@@ -111,12 +123,24 @@ public class CardPagerActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Inflates the custom menu items
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.simple_main_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * Launches new activities
+     * Searchbar activity
+     * Settings Activity
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

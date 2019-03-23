@@ -12,6 +12,10 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+/**
+ * Pronunciation Guide Activity class
+ * Inflates Textviews with helpful descriptions for pronouncing Chinese and loads Sound examples.
+ */
 public class PronunciationGuideActivity extends AppCompatActivity {
     //Media Section
     AudioManager audioManager;
@@ -22,6 +26,10 @@ public class PronunciationGuideActivity extends AppCompatActivity {
     private int mSoundMa3;
     private int mSoundMa4;
 
+    /**
+     * Inits the textviews, loads the sounds, and sets onclick listeners for playing the sounds.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +88,9 @@ public class PronunciationGuideActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Releases sound pool resources
+     */
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -93,6 +104,13 @@ public class PronunciationGuideActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * Starts Activities
+     * Search Activity
+     * Settings Activity
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
