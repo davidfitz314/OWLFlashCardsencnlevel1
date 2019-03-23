@@ -38,6 +38,10 @@ import com.dcfportfolio.owlflashcardsen_cnlevel1.roomDataBase.CardViewModel;
 
 import java.util.List;
 
+/**
+ * Search Activity class
+ * Allows searching the database by using query terms from English, Chinese, or pinyin.
+ */
 public class SearchActivity extends AppCompatActivity {
     private EditText mSearchText;
     private boolean mHasSearched = false;
@@ -55,11 +59,17 @@ public class SearchActivity extends AppCompatActivity {
     AudioManager audioManager;
     private float volume;
     protected SoundPool soundPool;
-    protected int soundEnglish = -1;
-    protected int soundChinese = -1;
+    protected int soundEnglish = 0;
+    protected int soundChinese = 0;
 
     private List<Card> mAllCards;
 
+    /**
+     * Init all buttons and views
+     * Displays search results after click handler has been pressed.
+     * Uses LiveObservers for changing search terms in the view model
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,7 +103,7 @@ public class SearchActivity extends AppCompatActivity {
 
                     mChineseEnglishText.setText(mAllCards.get(0).getChineseEnglish());
                     mChineseEnglishText.setContentDescription(mAllCards.get(0).getChineseEnglish());
-                    if (mAllCards.get(0).getSoundEn() != -1 && mAllCards.get(0).getSoundCn() != -1) {
+                    if (mAllCards.get(0).getSoundEn() != 0 && mAllCards.get(0).getSoundCn() != 0) {
 
                         int soundE = mAllCards.get(0).getSoundEn();
                         int soundC = mAllCards.get(0).getSoundCn();
@@ -176,6 +186,10 @@ public class SearchActivity extends AppCompatActivity {
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
+    /**
+     * Edits the search term to have no leading or trailing whitespaces and to be lowercase then inserts it to the view model
+     * @param view
+     */
     public void commitSearch(View view) {
         if (!mHasSearched) {
             mHasSearched = true;
@@ -197,14 +211,22 @@ public class SearchActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * plays the English sound if loaded
+     * @param view
+     */
     public void playEnglishSound(View view) {
-        if (loaded && soundEnglish != -1){
+        if (loaded && soundEnglish != 0){
             soundPool.play(soundEnglish, volume,volume,1,0, 1f);
         }
     }
 
+    /**
+     * Plays the Chinese sound if loaded
+     * @param view
+     */
     public void playChineseSound(View view) {
-        if (loaded && soundChinese != -1){
+        if (loaded && soundChinese != 0){
             soundPool.play(soundChinese, volume,volume,1,0, 1f);
         }
     }
@@ -215,6 +237,11 @@ public class SearchActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * Closes Search Activity
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
