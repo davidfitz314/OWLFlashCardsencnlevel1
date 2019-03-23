@@ -1,6 +1,10 @@
 package com.dcfportfolio.owlflashcardsen_cnlevel1;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.ViewInteraction;
 import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
@@ -38,19 +42,27 @@ import static org.hamcrest.Matchers.allOf;
 public class MainActivityTest {
 
     @Rule
-    public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class){
+        @Override
+        protected void beforeActivityLaunched() {
+            clearSharedPrefs(InstrumentationRegistry.getTargetContext());
+            super.beforeActivityLaunched();
+        }
+    };
 
-    /* only used on first time app start or when settings pref are reset
+    /**
+     * Clears everything in the SharedPreferences
+     */
+    private void clearSharedPrefs(Context context) {
+        SharedPreferences prefs =
+                PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.clear();
+        editor.commit();
+    }
+
     @Test
     public void mainActivityNameDialogTest() {
-        // Added a sleep statement to match the app's execution delay.
-        // The recommended way to handle such scenarios is to use Espresso idling resources:
-        // https://google.github.io/android-testing-support-library/docs/espresso/idling-resource/index.html
-        try {
-            Thread.sleep(7000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
         ViewInteraction editText = onView(
                 allOf(childAtPosition(
@@ -61,15 +73,6 @@ public class MainActivityTest {
                         0),
                         isDisplayed()));
         editText.perform(replaceText("davi"), closeSoftKeyboard());
-
-        // Added a sleep statement to match the app's execution delay.
-        // The recommended way to handle such scenarios is to use Espresso idling resources:
-        // https://google.github.io/android-testing-support-library/docs/espresso/idling-resource/index.html
-        try {
-            Thread.sleep(7000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
         ViewInteraction appCompatButton = onView(
                 allOf(withId(android.R.id.button1), withText("Ok"),
@@ -99,11 +102,10 @@ public class MainActivityTest {
             }
         };
     }
-    */
 
-    @Test
+    /*@Test
     public void OpenNextActivityTest() {
         onView(withId(R.id.title_enter_button)).perform(click());
         onView(withId(R.id.pronounceGuideButton)).check(matches(isDisplayed()));
-    }
+    }*/
 }
