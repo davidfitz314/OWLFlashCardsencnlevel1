@@ -91,7 +91,7 @@ public abstract class CardDatabase extends RoomDatabase {
                         String soundEnName = object.getString("SoundEn"); //sound english
                         String soundCnName = object.getString("SoundCn"); //sound chinese
                         int category = object.getInt("Category"); // category
-                        Log.d("LOADING_NEW_CARDS", english+" "+chinese);
+
                         //get Resource Ids
                         int enResourceId = localContext.getResources().getIdentifier(soundEnName, "raw", localContext.getPackageName());
                         int cnResourceId = localContext.getResources().getIdentifier(soundCnName, "raw", localContext.getPackageName());

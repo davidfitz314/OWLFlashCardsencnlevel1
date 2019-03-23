@@ -72,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
         /*
             TODO remove stack print traces, log, and debug tags before publishing
-            TODO update database, remove fallback to destructive migration method and implement better method
-
          */
 
 
