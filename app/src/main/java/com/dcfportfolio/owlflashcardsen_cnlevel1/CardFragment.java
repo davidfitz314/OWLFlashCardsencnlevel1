@@ -117,20 +117,21 @@ public class CardFragment extends Fragment {
         }
 
         Bundle arguments = getArguments();
-        int soundE = -1;
-        int soundC = -1;
+        int soundE = 0;
+        int soundC = 0;
         try {
             soundE = arguments.getInt(ARG_SECTION_SOUND_ENGLISH);
             soundC = arguments.getInt(ARG_SECTION_SOUND_CHINESE);
         } catch (NullPointerException e){
+            //TODO sound problems
             Log.d("SOUNDPROBLEMS", "dont care if skipped for now");
-            soundE = -1;
-            soundC = -1;
+            soundE = 0;
+            soundC = 0;
         }
-        if (soundE != -1) {
+        if (soundE != 0) {
             soundEnglish = soundPool.load(getContext(), soundE, 1);
         }
-        if (soundC != -1) {
+        if (soundC != 0) {
             soundChinese = soundPool.load(getContext(), soundC, 1);
         }
 
@@ -140,12 +141,9 @@ public class CardFragment extends Fragment {
         final ImageView centerImage = rootView.findViewById(R.id.cardCenterImage);
         if (isChinese){
             centerImage.setImageResource(R.drawable.high_earth);
-            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, -1) != -1){
-                playSoundButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, 0) != 0){
+                playSoundButton.setOnClickListener((View v)-> {
                         soundPool.play(soundChinese, volume,volume,0,0, 1f);
-                    }
                 });
             } else {
                 playSoundButton.setVisibility(View.GONE);
@@ -158,12 +156,9 @@ public class CardFragment extends Fragment {
             secondaryView.setText(getArguments().getString(ARG_SECTION_CHINESE_ENGLISH_NAME));
         } else {
             centerImage.setImageResource(R.drawable.high_little_owl);
-            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, -1) != -1){
-                playSoundButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        soundPool.play(soundEnglish, volume,volume,0,0, 1f);
-                    }
+            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, 0) != 0){
+                playSoundButton.setOnClickListener((View v) ->{
+                    soundPool.play(soundEnglish, volume,volume,0,0, 1f);
                 });
             } else {
                 playSoundButton.setVisibility(View.GONE);
@@ -200,12 +195,9 @@ public class CardFragment extends Fragment {
 
                         if (isChinese){
                             centerImage.setImageResource(R.drawable.high_earth);
-                            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, -1) != -1){
-                                playSoundButton.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
+                            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, 0) != 0){
+                                playSoundButton.setOnClickListener((View v) -> {
                                         soundPool.play(soundChinese, volume,volume,0,0, 1f);
-                                    }
                                 });
                             } else {
                                 playSoundButton.setVisibility(View.GONE);
@@ -219,12 +211,10 @@ public class CardFragment extends Fragment {
                             secondaryView.setText(getArguments().getString(ARG_SECTION_CHINESE_ENGLISH_NAME));
                         } else {
                             centerImage.setImageResource(R.drawable.high_little_owl);
-                            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, -1) != -1){
-                                playSoundButton.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
+                            if (getArguments().getInt(ARG_SECTION_SOUND_ENGLISH, 0) != 0){
+                                playSoundButton.setOnClickListener((View v) -> {
                                         soundPool.play(soundEnglish, volume,volume,0,0, 1f);
-                                    }
+
                                 });
                             } else {
                                 playSoundButton.setVisibility(View.GONE);

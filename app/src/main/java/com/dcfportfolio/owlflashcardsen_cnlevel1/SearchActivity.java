@@ -55,8 +55,8 @@ public class SearchActivity extends AppCompatActivity {
     AudioManager audioManager;
     private float volume;
     protected SoundPool soundPool;
-    protected int soundEnglish = -1;
-    protected int soundChinese = -1;
+    protected int soundEnglish = 0;
+    protected int soundChinese = 0;
 
     private List<Card> mAllCards;
 
@@ -93,7 +93,7 @@ public class SearchActivity extends AppCompatActivity {
 
                     mChineseEnglishText.setText(mAllCards.get(0).getChineseEnglish());
                     mChineseEnglishText.setContentDescription(mAllCards.get(0).getChineseEnglish());
-                    if (mAllCards.get(0).getSoundEn() != -1 && mAllCards.get(0).getSoundCn() != -1) {
+                    if (mAllCards.get(0).getSoundEn() != 0 && mAllCards.get(0).getSoundCn() != 0) {
 
                         int soundE = mAllCards.get(0).getSoundEn();
                         int soundC = mAllCards.get(0).getSoundCn();
@@ -198,13 +198,13 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     public void playEnglishSound(View view) {
-        if (loaded && soundEnglish != -1){
+        if (loaded && soundEnglish != 0){
             soundPool.play(soundEnglish, volume,volume,1,0, 1f);
         }
     }
 
     public void playChineseSound(View view) {
-        if (loaded && soundChinese != -1){
+        if (loaded && soundChinese != 0){
             soundPool.play(soundChinese, volume,volume,1,0, 1f);
         }
     }
