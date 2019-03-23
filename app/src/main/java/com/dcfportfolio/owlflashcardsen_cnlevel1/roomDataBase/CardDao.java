@@ -9,6 +9,10 @@ import android.arch.persistence.room.Query;
 
 import java.util.List;
 
+/**
+ * CardDao class
+ * Inserts and retrieves data into the database
+ */
 @Dao
 public interface CardDao {
     //Get all Cards

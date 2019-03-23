@@ -18,6 +18,10 @@ import android.widget.Toast;
 import com.dcfportfolio.owlflashcardsen_cnlevel1.roomDataBase.Card;
 import com.dcfportfolio.owlflashcardsen_cnlevel1.roomDataBase.CardViewModel;
 
+/**
+ * Card Menu class
+ * Handles card category button clicks and intents.
+ */
 public class CardMenu extends AppCompatActivity {
     private static final int catAnimals         = 1;
     private static final int catBodyParts       = 2;
@@ -32,6 +36,12 @@ public class CardMenu extends AppCompatActivity {
     public static final String mTitle          = "com.dcfportfolio.owlflashcardsen_cnlevel1.CARD_TITLE";
 
 
+    /**
+     * Inits all Buttons
+     * Generates button height using ViewTreeObserver
+     * Sets all buttons OnClickListeners
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -167,12 +177,24 @@ public class CardMenu extends AppCompatActivity {
         });
     }
 
+    /**
+     * Inflates the custom menu items.
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.simple_main_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * Launches new activities
+     * Searchbar activity
+     * Settings Activity
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

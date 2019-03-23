@@ -51,10 +51,18 @@ public class CardFragment extends Fragment {
     private int soundEnglish;
     private int soundChinese;
 
+    /**
+     * Empty constructor for init the fragment
+     */
     public CardFragment() {
         // Required empty public constructor
     }
 
+    /**
+     * Creates a new Instance of the Fragment and converts the param into Strings for bundle args.
+     * @param card
+     * @return
+     */
     public static CardFragment newInstance(Card card){
         CardFragment cardFragment = new CardFragment();
         if (card != null) {
@@ -69,6 +77,9 @@ public class CardFragment extends Fragment {
         return cardFragment;
     }
 
+    /**
+     * Release soundpool resources
+     */
     @Override
     public void onDestroyView() {
         super.onDestroyView();
@@ -76,6 +87,15 @@ public class CardFragment extends Fragment {
         soundPool = null;
     }
 
+    /**
+     * Creates the fragment view
+     * handles flipping the card to English or Chinese version
+     * handles button clicks for playing sound
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -93,17 +113,7 @@ public class CardFragment extends Fragment {
             e.printStackTrace();
         }
 
-        //audio manager for volume
-        try {
-            audioManager = (AudioManager) getContext().getSystemService(AUDIO_SERVICE);
-            float actVolume, maxVolume;
-            actVolume = (float) audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
-            maxVolume = (float) audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-            volume = actVolume / maxVolume;
-        } catch (Exception e){
-            volume = 1;
-            e.printStackTrace();
-        }
+        setAudioControls();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             AudioAttributes attr = new AudioAttributes.Builder()
@@ -235,5 +245,23 @@ public class CardFragment extends Fragment {
         });
 
         return rootView;
+    }
+
+    /**
+     * Gets the AudioManager for controlling volume through phone buttons.
+     */
+    public void setAudioControls(){
+        //audio manager for volume
+        try {
+            audioManager = (AudioManager) getContext().getSystemService(AUDIO_SERVICE);
+            float actVolume, maxVolume;
+            actVolume = (float) audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+            maxVolume = (float) audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+            volume = actVolume / maxVolume;
+        } catch (Exception e){
+            volume = 1;
+            e.printStackTrace();
+        }
+
     }
 }

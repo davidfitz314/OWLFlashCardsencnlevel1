@@ -15,6 +15,12 @@ import android.widget.ImageButton;
 
 import java.util.Set;
 
+/**
+ * Custom Alert Dialog Card Help class
+ * @extends Dialog
+ * @implements View.OnClickListener
+ * Creates a dialog for displaying card help
+ */
 public class CustomAlertDialogCardHelp extends Dialog implements View.OnClickListener {
     public Activity c;
     public Dialog d;
