@@ -68,10 +68,11 @@ public abstract class CardDatabase extends RoomDatabase {
         @Override
         protected Void doInBackground(Void... voids) {
             //reset database to blank slate
-            mDao.deleteAll();
+            //mDao.deleteAll();
             Context localContext = mContext.getApplicationContext();
-
-            loadJSONData(localContext);
+            if (mDao.getAnyCard().length < 1){
+                loadJSONData(localContext);
+            }
             return null;
         }
 
