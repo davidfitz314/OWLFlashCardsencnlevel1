@@ -16,6 +16,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -35,6 +36,10 @@ public class CardPagerActivity extends AppCompatActivity {
     private CardPagerActivity.InnerPageAdapter mAdapter;
     private SharedPreferences mPreferences;
 
+    //Debugging tools
+    private static final String LOG_TAG = "CardPagerActivity_DEBUG";
+    private static boolean DEBUG_MODE = false;
+
     /**
      * Connects to the view model for loading the needed cards
      * displays card help screen fragment
@@ -53,7 +58,9 @@ public class CardPagerActivity extends AppCompatActivity {
             try {
                 helpDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
             } catch (NullPointerException e){
-                e.printStackTrace();
+                if (DEBUG_MODE) {
+                    Log.e(LOG_TAG, Log.getStackTraceString(e));
+                }
             }
             helpDialog.show();
         }

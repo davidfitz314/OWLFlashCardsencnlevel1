@@ -28,6 +28,8 @@ public abstract class CardDatabase extends RoomDatabase {
     public abstract CardDao cardDao();
     private static CardDatabase INSTANCE;
     private static Context mContext;
+    private static final String LOG_TAG = "DB_DEBUG";
+    private static boolean DEBUG_MODE = false;
 
     /**
      * getDatabase grabs the database instance.
@@ -101,7 +103,9 @@ public abstract class CardDatabase extends RoomDatabase {
                     }
                 }
             } catch (JSONException e) {
-                e.printStackTrace();
+                if (DEBUG_MODE) {
+                    Log.e(LOG_TAG, Log.getStackTraceString(e));
+                }
             }
 
         }

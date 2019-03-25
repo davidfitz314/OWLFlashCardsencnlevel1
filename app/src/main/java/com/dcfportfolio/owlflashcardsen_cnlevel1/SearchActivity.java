@@ -62,6 +62,10 @@ public class SearchActivity extends AppCompatActivity {
     protected int soundEnglish = 0;
     protected int soundChinese = 0;
 
+    //Debugging tools
+    private static final String LOG_TAG = "SearchActivity_DEBUG";
+    private static boolean DEBUG_MODE = false;
+
     private List<Card> mAllCards;
 
     /**
@@ -116,7 +120,9 @@ public class SearchActivity extends AppCompatActivity {
                             chineseSound.setTextColor(getResources().getColor(R.color.enabled_color));*/
 
                         } catch (Exception e){
-                            e.printStackTrace();
+                            if (DEBUG_MODE) {
+                                Log.e(LOG_TAG, Log.getStackTraceString(e));
+                            }
                         }
 
                     } else {
@@ -157,7 +163,9 @@ public class SearchActivity extends AppCompatActivity {
             maxVolume = (float) audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
             volume = actVolume / maxVolume;
         } catch (Exception e){
-            e.printStackTrace();
+            if (DEBUG_MODE) {
+                Log.e(LOG_TAG, Log.getStackTraceString(e));
+            }
             volume = 1;
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
@@ -206,7 +214,9 @@ public class SearchActivity extends AppCompatActivity {
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(mSearchResultsHolder.getWindowToken(), InputMethodManager.RESULT_UNCHANGED_SHOWN);
         } catch (Exception e){
-            e.printStackTrace();
+            if (DEBUG_MODE) {
+                Log.e(LOG_TAG, Log.getStackTraceString(e));
+            }
         }
 
     }

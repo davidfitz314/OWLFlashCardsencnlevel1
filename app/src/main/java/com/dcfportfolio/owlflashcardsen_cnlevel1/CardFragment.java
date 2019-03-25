@@ -51,6 +51,10 @@ public class CardFragment extends Fragment {
     private int soundEnglish;
     private int soundChinese;
 
+    //Debugging tools
+    private static final String LOG_TAG = "CardFragment_DEBUG";
+    private static boolean DEBUG_MODE = false;
+
     /**
      * Empty constructor for init the fragment
      */
@@ -110,7 +114,9 @@ public class CardFragment extends Fragment {
                 isChinese = true;
             }
         } catch (Exception e){
-            e.printStackTrace();
+            if (DEBUG_MODE) {
+                Log.e(LOG_TAG, Log.getStackTraceString(e));
+            }
         }
 
         setAudioControls();
@@ -254,7 +260,9 @@ public class CardFragment extends Fragment {
             volume = actVolume / maxVolume;
         } catch (Exception e){
             volume = 1;
-            e.printStackTrace();
+            if (DEBUG_MODE) {
+                Log.e(LOG_TAG, Log.getStackTraceString(e));
+            }
         }
 
     }

@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences mPreferences;
     private TextView mTitleView;
 
+    //Debugging tools
+    private static final String LOG_TAG = "MainActivity_DEBUG";
+    private static boolean DEBUG_MODE = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,13 +71,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }catch (Exception e){
-            e.printStackTrace();
+            if (DEBUG_MODE) {
+                Log.e(LOG_TAG, Log.getStackTraceString(e));
+            }
         }
-
-        /*
-            TODO remove stack print traces, log, and debug tags before publishing
-         */
-
 
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         boolean getDisplay = mPreferences.getBoolean(SettingsActivity.KEY_PREF_ASK_FOR_USER_NAME, true);
