@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     mEnterButton.setWidth(width);
                 }
             });
-        }catch (Exception e){
+        } catch (Exception e) {
             if (DEBUG_MODE) {
                 Log.e(LOG_TAG, Log.getStackTraceString(e));
             }
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         boolean getDisplay = mPreferences.getBoolean(SettingsActivity.KEY_PREF_ASK_FOR_USER_NAME, true);
-        if (getDisplay){
+        if (getDisplay) {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             final EditText edittext = new EditText(this);
             alert.setMessage(R.string.set_display_name_alert_message);
@@ -132,6 +133,10 @@ public class MainActivity extends AppCompatActivity {
         android.support.v7.preference.PreferenceManager
                 .setDefaultValues(this, R.xml.preferences, false);
 
+        // ATTENTION: This was auto-generated to handle app links.
+        Intent appLinkIntent = getIntent();
+        String appLinkAction = appLinkIntent.getAction();
+        Uri appLinkData = appLinkIntent.getData();
     }
 
     public void goToMenuPage(View view) {
