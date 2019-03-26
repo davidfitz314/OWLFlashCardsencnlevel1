@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'OwlFcKey'
+            keyPassword 'Pie314159!'
+            storeFile file('C:/Users/david/AndroidKeystores.jks')
+            storePassword 'Pie314159!'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.dcfportfolio.owlflashcardsen_cnlevel1"
@@ -44,7 +52,6 @@ dependencies {
     //firebase
     implementation 'com.google.firebase:firebase-core:16.0.1'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
-
     androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
         exclude group: 'com.android.support', module: 'support-v4'
