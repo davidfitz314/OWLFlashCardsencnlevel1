@@ -2,7 +2,7 @@
 English to Chinese Flash Card Android App.
 
 OWL FlashCards Level 1 en-cn is produced and published by David ChenFitzgerald. 
-All images and recordings are the intellectual property of David ChenFitzgerald and for commercial use written permission must be granted.
+All images and recordings are the intellectual property of David ChenFitzgerald and require permission for commercial use through writing. All other features and code of this app falls under MIT license. 
 
 MIT License
 
