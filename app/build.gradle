@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'OwlFcKey'
-            keyPassword 'Pie314159!'
-            storeFile file('C:/Users/david/AndroidKeystores.jks')
-            storePassword 'Pie314159!'
-        }
-    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.dcfportfolio.owlflashcardsen_cnlevel1"
