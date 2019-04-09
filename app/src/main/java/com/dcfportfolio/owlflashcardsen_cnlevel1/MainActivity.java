@@ -78,7 +78,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean getDisplay = mPreferences.getBoolean(SettingsActivity.KEY_PREF_ASK_FOR_USER_NAME, true);
+
+        /*boolean getDisplay = mPreferences.getBoolean(SettingsActivity.KEY_PREF_ASK_FOR_USER_NAME, true);
+
         if (getDisplay) {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             final EditText edittext = new EditText(this);
@@ -103,8 +105,8 @@ public class MainActivity extends AppCompatActivity {
                     LayoutInflater layoutInflater = getLayoutInflater();
                     View layout = layoutInflater.inflate(R.layout.welcome_custom_toast_message, (ViewGroup) findViewById(R.id.custom_toast_welcome_message));
                     TextView text = (TextView) layout.findViewById(R.id.welcome_view_message);
-                    String name = mPreferences.getString(SettingsActivity.KEY_PREF_EDIT_USER_NAME, "");
-                    String combineGreetingName = greeting + " " + name;
+                    //String name = mPreferences.getString(SettingsActivity.KEY_PREF_EDIT_USER_NAME, "");
+                    String combineGreetingName = greeting;// + " " + name;
                     text.setText(combineGreetingName);
                     Toast toast = new Toast(getApplicationContext());
                     toast.setGravity(Gravity.TOP, 0, 0);
@@ -129,6 +131,18 @@ public class MainActivity extends AppCompatActivity {
             toast.setView(layout);
             toast.show();
         }
+*/
+        String greeting = getString(R.string.welcome_string_greeting);
+        LayoutInflater layoutInflater = getLayoutInflater();
+        View layout = layoutInflater.inflate(R.layout.welcome_custom_toast_message, (ViewGroup) findViewById(R.id.custom_toast_welcome_message));
+        TextView text = (TextView) layout.findViewById(R.id.welcome_view_message);
+        String combineGreetingName = greeting +" ";
+        text.setText(combineGreetingName);
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.TOP, 0, 0);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+        toast.show();
 
         android.support.v7.preference.PreferenceManager
                 .setDefaultValues(this, R.xml.preferences, false);

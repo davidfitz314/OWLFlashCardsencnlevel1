@@ -28,6 +28,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle bundle, String s) {
         setPreferencesFromResource(R.xml.preferences, s);
 
+        /*
         mPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         String userNameStringPref = mPreferences.getString(SettingsActivity.KEY_PREF_EDIT_USER_NAME, getString(R.string.default_edit_text_name_string));
         final Preference userNamePref = this.findPreference(SettingsActivity.KEY_PREF_EDIT_USER_NAME);
@@ -38,8 +39,9 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 userNamePref.setSummary(o.toString());
                 return true;
             }
-        });
+        });*/
 
+        mPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         final ListPreference cardLangPref = (ListPreference) this.findPreference(SettingsActivity.KEY_PREF_SET_CARD_LANGUAGE);
         String langChoice = mPreferences.getString(SettingsActivity.KEY_PREF_SET_CARD_LANGUAGE, getString(R.string.language_choice_default_value));
         cardLangPref.setSummary(langChoice);

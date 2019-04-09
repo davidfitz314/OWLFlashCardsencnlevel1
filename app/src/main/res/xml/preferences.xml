@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<!--
     <PreferenceCategory
         android:title="@string/pref_category_general"
         app:iconSpaceReserved="false">
@@ -26,7 +26,7 @@
             android:summaryOn="@string/check_box_pref_get_display_name_summary_on"
             android:title="@string/check_box_pref_get_display_name_title" />
 
-    </PreferenceCategory>
+    </PreferenceCategory> -->
     <PreferenceCategory android:title="@string/preference_category_flash_cards"
         app:iconSpaceReserved="false">
 

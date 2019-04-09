@@ -49,8 +49,8 @@
     <string name="preference_category_flash_cards">Flash Cards</string>
     <string name="language_choice_default_value">English</string>
     <string name="owl_flashcards_logo_toast_display">owl flashcards logo</string>
-    <string name="welcome_back_string_greeting">Welcome Back,</string>
-    <string name="welcome_string_greeting">Welcome,</string>
+    <string name="welcome_back_string_greeting">Welcome Back</string>
+    <string name="welcome_string_greeting">Welcome</string>
     <string name="alert_dialog_ok_button">Ok</string>
     <string name="welcome_to_owl_flash_cards_alert_title">Welcome to OWL FlashCards.</string>
     <string name="set_display_name_alert_message">Please Set Your Display Name</string>
